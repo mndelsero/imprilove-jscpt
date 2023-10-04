@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header .compras-contacto h5 {
+  color: rgba(121, 114, 114, 0.74);
+  background-color: rgba(208, 137, 155, 0.23);
+  padding-block: 1rem;
+  text-align: center;
+}
+.header .center-menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .center-menu-section .redes {
+  padding: 1rem;
+}
+.header .center-menu-section .redes a {
+  margin: 10px;
+}
+.header .center-menu-section .redes img {
+  width: 20px;
+}
+.header .center-menu-section .logo {
+  justify-self: center;
+}
+.header .center-menu-section .logo img {
+  border-radius: 50%;
+}
+.header .center-menu-section .buscador {
+  padding: 1rem;
+}
+.header .center-menu-section .buscador img {
+  width: 20px;
+}
+
+.menu {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+.menu .menu-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.menu .menu-lista li {
+  padding: 1rem;
+}
+.menu .menu-lista a {
+  color: rgb(158, 209, 203);
+}
+
+.pie-de-pagina {
+  display: flex;
+  flex-direction: column;
+}
+.pie-de-pagina .datos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 5rem;
+  line-height: 1.5rem;
+}
+.pie-de-pagina .datos a {
+  color: black;
+}
+.pie-de-pagina .datos a:hover {
+  color: rgb(124, 174, 124);
+  transition: 0.5s;
+}
+.pie-de-pagina .datos .sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+}
+.pie-de-pagina .datos .sobre-nosotros h5 {
+  border-bottom: darkgrey solid 0.5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.pie-de-pagina .datos .contacto {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+}
+.pie-de-pagina .datos .contacto h5 {
+  border-bottom: darkgrey solid 0.5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.pie-de-pagina .datos .siguenos {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+}
+.pie-de-pagina .datos .siguenos h5 {
+  border-bottom: darkgrey solid 0.5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.pie-de-pagina .datos .siguenos .siguenos-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.pie-de-pagina .datos .siguenos img {
+  width: 20px;
+}
+.pie-de-pagina .datos .menu-pie {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+}
+.pie-de-pagina .datos .menu-pie h5 {
+  border-bottom: darkgrey solid 0.5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.pie-de-pagina .pie-final {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: darkgrey solid 0.5px;
+}
+.pie-de-pagina .pie-final img {
+  width: 7rem;
+}/*# sourceMappingURL=estilo.css.map */

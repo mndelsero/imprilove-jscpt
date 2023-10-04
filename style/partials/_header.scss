@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+    .compras-contacto {
+
+        h5 {
+            color: rgba(121, 114, 114, 0.74);
+            background-color: rgba(208, 137, 155, 0.23);
+            padding-block: 1rem;
+            text-align: center;
+        }
+    }
+
+    .center-menu-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .redes {
+            padding: 1rem;
+
+            a {
+                margin: 10px;
+            }
+
+            img {
+                width: 20px;
+            }
+        }
+
+        .logo {
+            justify-self: center;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .buscador {
+            padding: 1rem;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+   
+
+    
+    
+}
+
+.menu {background-color: white;
+        position: sticky;
+        top: 0px;
+
+    .menu-lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        li {
+            padding: 1rem;
+        }
+
+        a {
+            color: rgba(158, 209, 203, 1);
+        }
+    }
+}

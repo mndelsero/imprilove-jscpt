@@ -1,0 +1,119 @@
+.pie-de-pagina {
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+
+    .datos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 5rem;
+
+        line-height: 1.5rem;
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(124, 174, 124);
+            transition: 0.5s;
+        }
+
+        .sobre-nosotros {
+            display: flex;
+            flex-direction: column;
+            margin-inline: 1rem;
+
+            h5 {
+                border-bottom: darkgrey solid 0.5px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .contacto {
+            display: flex;
+            flex-direction: column;
+            margin-inline: 1rem;
+
+            h5 {
+                border-bottom: darkgrey solid 0.5px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .siguenos {
+            display: flex;
+            flex-direction: column;
+            margin-inline: 1rem;
+
+            h5 {
+                border-bottom: darkgrey solid 0.5px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .siguenos-redes {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            img {
+                width: 20px;
+            }
+
+            
+        }
+
+        .menu-pie {
+            display: flex;
+            flex-direction: column;
+            margin-inline: 1rem;
+
+            h5 {
+                border-bottom: darkgrey solid 0.5px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+
+            }
+        }
+
+    }
+
+    .pie-final {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        border-top: darkgrey solid 0.5px;
+
+        img {
+            width: 7rem;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
