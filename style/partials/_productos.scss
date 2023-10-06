@@ -1,0 +1,107 @@
+.cards {display: flex;
+    flex-direction: column;
+
+    a {
+        color: black;
+
+    }
+
+    a:hover {
+        color: rgb(124, 174, 124);
+        transition: 0.5s;
+        background-color: brown;
+    }
+    
+    h2{
+        align-self: center;
+    }
+    .productos-destacados-index {
+        display: grid;
+
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: (6,1fr);
+        padding-inline: 5rem;
+       gap: 1rem;
+       
+        .card {display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            
+            width: 20rem;
+            border: solid rgb(158, 128, 152) 0.5px;
+            img{
+                width: 18rem;
+            }
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                 padding: 1rem;
+            line-height: 1.5rem;
+
+            .btn-comprar{color: white;
+                background-color: #68c4a1;
+                padding: 0.5rem;
+                border-radius: 5px;
+            }
+        
+        }
+           
+            }
+            
+            
+        }
+
+        .novedades-index {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        grid-template-rows: (6,1fr);
+        padding-inline: 5rem;
+       gap: 1rem;
+       
+    
+            .card {display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+                margin: 1rem;
+                width: 20rem;
+                border: solid rgb(158, 128, 152) 0.5px;
+                img{
+                    width: 18rem;
+                }
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                     padding: 1rem;
+                line-height: 1.5rem;
+    
+                .btn-comprar{color: white;
+                    background-color: #68c4a1;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                }
+            
+            }
+               
+                }
+                
+                
+            }
+
+
+            .ver-seccion{color: white;
+                background-color: #68c4a1;
+                padding: 0.5rem;
+                border-radius: 5px;
+                align-self: center;
+
+                
+            }
+
+           
+        }
+
+

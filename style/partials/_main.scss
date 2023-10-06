@@ -1,0 +1,41 @@
+.main-index {
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        align-self: center;
+    }
+
+  
+    .fotografia-index{display: none;
+        width: 70%;
+        align-self: center;
+        margin-bottom: 3rem;
+        
+        img{width: 100%;
+        }
+    }
+
+    #carouselExampleIndicators {
+        align-self: center;
+        width: 100%;
+        padding-inline: 5rem;
+
+
+
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 40rem;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+
+    .info-index{display: flex;
+    flex-direction: column;
+h2{align-self: center;}
+p{align-self: center;}
+}
+}
