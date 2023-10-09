@@ -21,7 +21,9 @@
         width: 100%;
         padding-inline: 5rem;
 
+        .carousel-control-prev{z-index: 0;}
 
+.carousel-control-next{z-index: 0;}
 
         .carousel-inner {
             .carousel-item {
