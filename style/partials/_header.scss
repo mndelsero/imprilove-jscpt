@@ -14,7 +14,7 @@
 
     .center-menu-section {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
 
         .redes {
@@ -41,7 +41,7 @@
         }
 
         .logo {
-            justify-self: center;
+          
 
             img {
                 border-radius: 50%;

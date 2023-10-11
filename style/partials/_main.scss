@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: column;
 
-    h2{
+    h2 {
         align-self: center;
     }
 
-  
-    .fotografia-index{display: none;
+
+    .fotografia-index {
+        display: none;
         width: 70%;
         align-self: center;
         margin-bottom: 3rem;
-        
-        img{width: 100%;
+
+        img {
+            width: 100%;
         }
     }
 
@@ -21,9 +23,13 @@
         width: 100%;
         padding-inline: 5rem;
 
-        .carousel-control-prev{z-index: 0;}
+        .carousel-control-prev {
+            z-index: 0;
+        }
 
-.carousel-control-next{z-index: 0;}
+        .carousel-control-next {
+            z-index: 0;
+        }
 
         .carousel-inner {
             .carousel-item {
@@ -35,9 +41,76 @@
         }
     }
 
-    .info-index{display: flex;
-    flex-direction: column;
-h2{align-self: center;}
-p{align-self: center;}
+    .info-index {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            align-self: center;
+        }
+
+        p {
+            align-self: center;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+.main-adhesivos {
+
+    display: flex;
+    flex-direction: column;
+
+
+    h2 {
+        align-self: center;
+    }
+
+    .adhesivos-presentacion {
+        padding-inline: 25rem;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            border-radius: 2rem;
+            width: 100%;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: $mainColor
+        }
+
+    }
+
+    .buscador-adhesivos {
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        form {
+            display:flex ;
+            font-size: 2rem;
+            line-height: 4rem;
+       
+           
+
+        
+
+            label {
+                font-size: 2rem;
+
+              
+            }
+        }
+    }
 }

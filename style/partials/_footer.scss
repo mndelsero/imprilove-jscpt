@@ -68,7 +68,7 @@
             img {
                 width: 20px;
 
-                &:hover {
+                &:hover {background-color: $linkHoverColor;
                     transition: 0.5s;
                     border-radius: 2px;
                     transform: scale(1.1);
