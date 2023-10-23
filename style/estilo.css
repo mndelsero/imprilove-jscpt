@@ -100,8 +100,9 @@ h2 {
   padding: 1rem;
 }
 .menu .menu-lista a {
-  padding: 1rem;
-  color: rgb(158, 209, 203);
+  font-size: 1.5rem;
+  padding-block: 1rem;
+  color: rgb(168, 168, 168);
   border-radius: 5px;
 }
 .menu .menu-lista a:hover {
@@ -173,6 +174,7 @@ h2 {
   width: 100%;
 }
 .main-adhesivos .adhesivos-presentacion p {
+  padding-top: 3rem;
   font-size: 1.5rem;
   color: rgb(206, 155, 193);
 }
