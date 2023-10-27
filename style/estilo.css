@@ -157,42 +157,42 @@ h2 {
   flex-direction: column;
 }
 
-.main-adhesivos {
+.main-section {
   display: flex;
   flex-direction: column;
 }
-.main-adhesivos h2 {
+.main-section h2 {
   align-self: center;
 }
-.main-adhesivos .adhesivos-presentacion {
+.main-section .section-presentacion {
   padding-inline: 25rem;
   display: flex;
   flex-direction: column;
 }
-.main-adhesivos .adhesivos-presentacion img {
+.main-section .section-presentacion img {
   border-radius: 2rem;
   width: 100%;
 }
-.main-adhesivos .adhesivos-presentacion p {
+.main-section .section-presentacion p {
   padding-top: 3rem;
   font-size: 1.5rem;
   color: rgb(206, 155, 193);
 }
-.main-adhesivos .buscador-adhesivos {
+.main-section .buscador-section {
   padding-inline: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main-adhesivos .buscador-adhesivos h4 {
+.main-section .buscador-section h4 {
   font-size: 2rem;
 }
-.main-adhesivos .buscador-adhesivos form {
+.main-section .buscador-section form {
   display: flex;
   font-size: 2rem;
   line-height: 4rem;
 }
-.main-adhesivos .buscador-adhesivos form label {
+.main-section .buscador-section form label {
   font-size: 2rem;
 }
 
