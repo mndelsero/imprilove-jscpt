@@ -196,6 +196,115 @@ h2 {
   font-size: 2rem;
 }
 
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-contacto .info-contacto {
+  display: flex;
+  justify-content: space-around;
+  border-top: solid rgb(75, 75, 75) 1px;
+  border-bottom: solid rgb(75, 75, 75) 1px;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  gap: 2rem;
+}
+.main-contacto .info-contacto .contacto-cuadrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: solid rgb(206, 155, 193) 1px;
+  padding: 1rem;
+}
+.main-contacto .info-contacto .contacto-cuadrito img {
+  width: 1.5rem;
+  margin: 0.5rem;
+}
+.main-contacto .info-contacto .contacto-cuadrito p {
+  font-weight: 500;
+}
+.main-contacto .info-contacto .contacto-cuadrito span {
+  color: rgb(206, 155, 193);
+}
+.main-contacto .contacto-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-self: center;
+  align-items: center;
+  padding: 2rem;
+}
+.main-contacto .contacto-form label {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #777777;
+}
+.main-contacto .contacto-form label input {
+  color: rgb(124, 174, 124);
+  font-weight: 200;
+  border-width: 1px 1px 3px 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-radius: 2px;
+  box-shadow: none;
+  background-color: #fff;
+  width: 20rem;
+  padding: 0.3rem;
+}
+.main-contacto .contacto-form label input:focus {
+  border-color: rgb(206, 155, 193);
+  border-width: 1px 1px 3px 1px;
+  box-shadow: none;
+}
+.main-contacto .contacto-form label input:focus-visible {
+  outline: none;
+  border-radius: 3px;
+}
+.main-contacto .comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-contacto .comentario .comentar {
+  color: rgb(124, 174, 124);
+  padding: 0.2rem;
+  font-weight: 200;
+  border-width: 1px 1px 3px 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-radius: 2px;
+  box-shadow: none;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+.main-contacto .comentario .comentar:focus {
+  border-color: rgb(206, 155, 193);
+  border-width: 1px 1px 3px 1px;
+  box-shadow: none;
+}
+.main-contacto .comentario .comentar:focus-visible {
+  outline: none;
+  border-radius: 3px;
+}
+.main-contacto button {
+  font-size: 1.5rem;
+  align-self: center;
+  color: white;
+  background-color: #68c4a1;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  border-radius: 5px;
+}
+.main-contacto button:hover {
+  color: rgb(124, 174, 124);
+  transition: 0.5s;
+  background-color: brown;
+}
+
 .pie-de-pagina {
   display: flex;
   flex-direction: column;
