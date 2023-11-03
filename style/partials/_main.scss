@@ -50,13 +50,28 @@
         }
 
         p {
+            display: inline-block;
             align-self: center;
+            width: 50%;
+            font-size: larger;
         }
     }
 
     .cards {
         display: flex;
         flex-direction: column;
+
+        a {
+
+
+
+
+            &:hover {
+                color: rgb(124, 174, 124);
+                transition: 0.5s;
+                background-color: brown;
+            }
+        }
     }
 }
 
@@ -103,13 +118,39 @@
             font-size: 2rem;
             line-height: 4rem;
 
-
-
-
-
             label {
-                font-size: 2rem;
 
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #777777;
+
+            }
+
+            select {
+                color: $linkHoverColor;
+                font-weight: 200;
+                border-width: 1px 1px 3px 1px;
+                border-style: solid;
+                border-color: #ddd;
+                border-radius: 2px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background-color: #fff;
+                width: 20rem;
+                padding: 0.3rem;
+
+
+                &:focus {
+                    border-color: $mainColor;
+                    border-width: 1px 1px 3px 1px;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+
+                &:focus-visible {
+                    outline: none;
+                    border-radius: 3px;
+                }
 
             }
         }
@@ -235,6 +276,16 @@
                 outline: none;
                 border-radius: 3px;
             }
+
+            
+        }
+        button{color: $mainColor;
+            background-color: rgb(71, 117, 71);
+            &:hover {
+                color: rgb(71, 117, 71);
+                transition: 0.5s;
+                background-color: $mainColor
+            }  
         }
 
     }
