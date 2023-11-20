@@ -30,6 +30,7 @@
             flex-direction: column;
             align-items: center;
             padding: 1rem;
+            
 
             width: 20rem;
             border: solid rgb(158, 128, 152) 0.5px;
@@ -44,6 +45,8 @@
 
             img {
                 width: 18rem;
+                height:18rem;
+                border-radius: 5px;
             }
 
             .card-body {
@@ -138,6 +141,8 @@
 
             img {
                 width: 18rem;
+                border-radius: 5px;
+
             }
 
             .card-body {
