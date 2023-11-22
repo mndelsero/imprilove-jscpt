@@ -538,6 +538,7 @@ h2 {
 }
 .section-card .card img {
   width: 18rem;
+  height: 18rem;
   border-radius: 5px;
 }
 .section-card .card .card-body {
