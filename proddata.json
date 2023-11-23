@@ -4,14 +4,16 @@
         "category":"Adhesivos",
           "name": "Adhesivo Matte",
        "price": 1200,
-       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg"
+       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
+       "stock":40
       },
       {
         "productId": 2,
         "category":"Adhesivos",
           "name": "Adhesivo Brillante",
        "price": 1300,
-       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg"
+       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
+       "stock":40
 
       },
       {
@@ -19,7 +21,8 @@
         "category":"Adhesivos",
           "name": "Adhesivo Trasparente",
        "price": 1500,
-       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg"
+       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
+       "stock":40
 
       },
       {
@@ -27,7 +30,8 @@
         "category":"Adhesivos",
           "name": "Adhesivo Doble Faz",
        "price": 2000,
-       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg"
+       "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
+       "stock":40
 
       },
       {
@@ -35,14 +39,16 @@
         "category":"Para Cumpleaños",
           "name": "Tarjeta Cumpleaños",
        "price": 5000,
-       "image":"./imgs/descarga.jpeg"
+       "image":"./imgs/descarga.jpeg",
+       "stock":40
       },
       {
         "productId": 6,
         "category":"Para Cumpleaños",
           "name": "Cuadro Cumpleaños",
        "price": 5500,
-       "image":"./imgs/descarga.jpeg"
+       "image":"./imgs/descarga.jpeg",
+       "stock":40
 
       },
       {
@@ -50,7 +56,8 @@
         "category":"Para Cumpleaños",
           "name": "Bolsitas para regalos",
        "price": 5500,
-       "image":"./imgs/descarga.jpeg"
+       "image":"./imgs/descarga.jpeg",
+       "stock":40
 
       },
       {
@@ -58,7 +65,8 @@
         "category":"Para Cumpleaños",
           "name": "Serpentinas",
        "price": 3000,
-       "image":"./imgs/descarga.jpeg"
+       "image":"./imgs/descarga.jpeg",
+       "stock":40
 
       },
       {
@@ -66,7 +74,8 @@
         "category":"Para Cumpleaños",
           "name": "Souvenirs",
        "price": 5000,
-       "image":"./imgs/descarga.jpeg"
+       "image":"./imgs/descarga.jpeg",
+       "stock":40
 
       },
       {
@@ -74,7 +83,8 @@
         "category":"Para Cumpleaños",
           "name": "Tarjetas QR",
        "price": 5500,
-       "image":"./imgs/descarga.jpeg"
+       "image":"./imgs/descarga.jpeg",
+       "stock":40
 
       },
       {
@@ -82,14 +92,16 @@
         "category":"Agendas-Papeleria",
           "name": "Calendario",
        "price": 6000,
-       "image":"./imgs/images (5).jpeg"
+       "image":"./imgs/images (5).jpeg",
+       "stock":40
       },
       {
         "productId": 12,
         "category":"Agendas-Papeleria",
           "name": "agenda-notas",
        "price": 4100,
-       "image":"./imgs/images (5).jpeg"
+       "image":"./imgs/images (5).jpeg",
+       "stock":40
 
       },
       {
@@ -97,7 +109,8 @@
         "category":"Agendas-Papeleria",
           "name": "album-retro",
        "price": 5600,
-       "image":"./imgs/images (5).jpeg"
+       "image":"./imgs/images (5).jpeg",
+       "stock":40
 
       },
       {
@@ -105,7 +118,8 @@
         "category":"Agendas-Papeleria",
           "name": "Marcador-color",
        "price": 3000,
-       "image":"./imgs/images (5).jpeg"
+       "image":"./imgs/images (5).jpeg",
+       "stock":40
 
       },
       {
@@ -113,70 +127,80 @@
         "category":"Cuadros-Fotografias",
           "name": "20x20",
        "price": 4000,
-       "image":"./imgs/2022-08-29.jpg"
+       "image":"./imgs/2022-08-29.jpg",
+       "stock":40
       },
       {
         "productId": 16,
         "category":"Cuadros-Fotografias",
           "name": "20x40",
        "price": 4500,
-       "image":"./imgs/2022-08-29.jpg"
+       "image":"./imgs/2022-08-29.jpg",
+       "stock":40
       },
       {
         "productId": 17,
         "category":"Cuadros-Fotografias",
           "name": "40x40",
        "price": 5000,
-       "image":"./imgs/2022-08-29.jpg"
+       "image":"./imgs/2022-08-29.jpg",
+       "stock":40
       },
       {
         "productId": 18,
         "category":"Cuadros-Fotografias",
           "name": "Rounded",
        "price": 4000,
-       "image":"./imgs/2022-08-29.jpg"
+       "image":"./imgs/2022-08-29.jpg",
+       "stock":40
       },
       {
         "productId": 19,
         "category":"Cuadros-Fotografias",
           "name": "20x20",
        "price": 4000,
-       "image":"./imgs/2022-08-29.jpg"
+       "image":"./imgs/2022-08-29.jpg",
+       "stock":40
       },
       {
         "productId": 20,
         "category":"Marketing",
           "name": "Impresion-Logo",
        "price": 2000,
-       "image":"./imgs/2023-01-06 (2).jpg"
+       "image":"./imgs/2023-01-06 (2).jpg",
+       "stock":40
       },
       {
         "productId": 21,
         "category":"Marketing",
           "name": "Tasas-Sublimadas",
        "price": 6000,
-       "image":"./imgs/2023-01-06 (2).jpg"
+       "image":"./imgs/2023-01-06 (2).jpg",
+       "stock":39
       },
       {
         "productId": 22,
         "category":"Marketing",
           "name": "Camiseta-Sublimada",
        "price": 10000,
-       "image":"./imgs/2023-01-06 (2).jpg"
+       "image":"./imgs/2023-01-06 (2).jpg",
+       "stock":40
       },
       {
         "productId": 23,
         "category":"Marketing",
           "name": "Bolsito-empresa",
        "price": 4500,
-       "image":"./imgs/2023-01-06 (2).jpg"
+       "image":"./imgs/2023-01-06 (2).jpg",
+       "stock":40
       },
       {
         "productId": 24,
         "category":"Tarjeteria",
           "name": "Tarjeta-Casamiento",
        "price": 4000,
-       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg"
+       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
+       "stock":40
 
       },
       {
@@ -184,7 +208,8 @@
         "category":"Tarjeteria",
           "name": "Tarjeta-Aniversario",
        "price": 3800,
-       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg"
+       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
+       "stock":40
 
       },
       {
@@ -192,7 +217,8 @@
         "category":"Tarjeteria",
           "name": "Tarjeta-Viajes",
        "price": 3000,
-       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg"
+       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
+       "stock":40
 
       },
       {
@@ -200,7 +226,8 @@
         "category":"Tarjeteria",
           "name": "Tarjeta-Empresa",
        "price": 5000,
-       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg"
+       "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
+       "stock":40
 
       }
 

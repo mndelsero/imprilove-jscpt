@@ -23,6 +23,7 @@ const agendasIndex = document.querySelector(".agendas-section");
         <div class="card-body">
         <p class="card-name">${producto.name}</p>
           <p class="card-text"> ${producto.price}$ pesos</p>
+          <p>Stock disponible:${producto.stock}</p>
           <a href="">
             <h5 class="card-title">${producto.category}</h5>
           </a>

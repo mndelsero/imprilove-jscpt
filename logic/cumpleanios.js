@@ -1,4 +1,5 @@
 // ADESIVOS SECTION
+const productosSeccionCantidad=document.querySelector(".seccion-productos-cantidad")
 
 const productosCumpleanios=document.querySelector(".productos-cumple")
 const productosSection=(categoria, section) =>{
@@ -11,6 +12,7 @@ const productosSection=(categoria, section) =>{
       <div class="card-body">
       <p class="card-name">${producto.name}</p>
         <p class="card-text"> ${producto.price}$ pesos</p>
+        <p>Stock disponible:${producto.stock}</p>
         <a href="">
           <h5 class="card-title">${producto.category}</h5>
         </a>
@@ -27,6 +29,7 @@ fetch('../proddata.json')
     const cumpleFilter = datos.filter(producto => producto.category === "Para Cumpleaños")
     
  productosSection(cumpleFilter, productosCumpleanios);
- 
+ productosSeccionCantidad.innerHTML=`${cumpleFilter.length} Productos`
+
 
 })

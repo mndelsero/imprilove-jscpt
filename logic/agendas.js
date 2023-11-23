@@ -1,5 +1,5 @@
 // ADESIVOS SECTION
-
+const productosSeccionCantidad=document.querySelector(".seccion-productos-cantidad")
 const productosAgendas=document.querySelector(".productos-agendas")
 const productosSection=(categoria, section) =>{
     section.innerHTML = ``;
@@ -11,6 +11,7 @@ const productosSection=(categoria, section) =>{
       <div class="card-body">
       <p class="card-name">${producto.name}</p>
         <p class="card-text"> ${producto.price}$ pesos</p>
+        <p>Stock disponible:${producto.stock}</p>
         <a href="">
           <h5 class="card-title">${producto.category}</h5>
         </a>
@@ -27,6 +28,7 @@ fetch('../proddata.json')
    const agendasFilter = datos.filter(producto => producto.category === "Agendas-Papeleria")
    
  productosSection(agendasFilter, productosAgendas);
- 
+ productosSeccionCantidad.innerHTML=`${agendasFilter.length} Productos`
+
 
 })
