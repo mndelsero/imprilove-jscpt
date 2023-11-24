@@ -348,6 +348,101 @@ h2 {
   background-color: brown;
 }
 
+.producto-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+.producto-section .mostrador-producto {
+  border-radius: 2rem;
+  padding: 5rem;
+  display: flex;
+  border: solid violet 1px;
+  background-color: #e7e7e7;
+  justify-content: space-around;
+}
+.producto-section .mostrador-producto img {
+  width: 40rem;
+  border-radius: 1rem;
+}
+.producto-section .mostrador-producto .prod-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2rem;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .intro-nombre {
+  color: rgb(237, 133, 227);
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro h5 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.producto-section .mostrador-producto .prod-detail .contacto-producto {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 3px;
+}
+.producto-section .mostrador-producto .prod-detail .contacto-producto h4 {
+  font-family: "Comming", sans-serif;
+  font-size: 3rem;
+}
+.producto-section .mostrador-producto .prod-detail .contacto-producto button {
+  border: 2px black;
+  font-size: 1rem;
+  align-self: center;
+  color: white;
+  background-color: #68c4a1;
+  padding-block: 0.3rem;
+  padding-inline: 1rem;
+  border-radius: 5px;
+}
+.producto-section .mostrador-producto .prod-detail .contacto-producto button:hover {
+  color: rgb(33, 82, 33);
+  transition: 0.5s;
+  background-color: rgb(237, 133, 227);
+}
+.producto-section .mostrador-producto .prod-detail .cant-producto-sctn {
+  display: flex;
+  flex-direction: column;
+}
+.producto-section .mostrador-producto .prod-detail .cant-producto-sctn p {
+  font-family: "Comming", sans-serif;
+  font-size: 2rem;
+}
+.producto-section .mostrador-producto .prod-detail .cant-producto-sctn p span {
+  padding: 1rem;
+  background-color: rgb(207, 212, 44);
+  border-radius: 50%;
+}
+.producto-section .mostrador-producto .prod-detail .cant-producto-sctn .contador {
+  display: flex;
+  justify-content: space-between;
+}
+.producto-section .mostrador-producto .prod-detail .cant-producto-sctn .contador button {
+  border: 2px black;
+  font-size: 3rem;
+  align-self: center;
+  color: white;
+  background-color: #68c4a1;
+  padding-inline: 1.5rem;
+  border-radius: 5px;
+}
+.producto-section .mostrador-producto .prod-detail .cant-producto-sctn .contador button:hover {
+  color: rgb(33, 82, 33);
+  transition: 0.5s;
+  background-color: rgb(237, 133, 227);
+}
+.producto-section .mostrador-producto .prod-detail .info-producto {
+  display: flex;
+  flex-direction: column;
+}
+.producto-section .mostrador-producto .prod-detail .info-producto h5 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgb(237, 133, 227);
+}
 .pie-de-pagina {
   display: flex;
   flex-direction: column;

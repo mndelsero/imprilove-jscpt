@@ -1,12 +1,12 @@
 // ADESIVOS SECTION
-const productosSeccionCantidad=document.querySelector(".seccion-productos-cantidad")
-const productosAdhesivos= document.querySelector(".productos-adhesivos")
-const productosSection=(categoria, section) =>{
-    section.innerHTML = ``;
-    categoria.forEach(producto => {
-      const cardSeccion = document.createElement(`div`);
-      cardSeccion.setAttribute(`class`, `card`);
-      cardSeccion.innerHTML = `
+const productosSeccionCantidad = document.querySelector(".seccion-productos-cantidad")
+const productosAdhesivos = document.querySelector(".productos-adhesivos")
+const productosSection = (categoria, section) => {
+  section.innerHTML = ``;
+  categoria.forEach(producto => {
+    const cardSeccion = document.createElement(`div`);
+    cardSeccion.setAttribute(`class`, `card`);
+    cardSeccion.innerHTML = `
       <img src=".${producto.image}" class="card-img-top" alt="...">
       <div class="card-body">
       <p class="card-name">${producto.name}</p>
@@ -18,26 +18,27 @@ const productosSection=(categoria, section) =>{
         </a>
         <button href="" class="btn-comprar" id="producto${producto.productId}">Comprar</button>
       </div>`;
-      section.appendChild(cardSeccion);
-    });
-  }
+    section.appendChild(cardSeccion);
+  });
+}
 
 
 fetch('../proddata.json')
-.then((res) => res.json())
-.then((datos) => {
+  .then((res) => res.json())
+  .then((datos) => {
     const adhesivosFilter = datos.filter(producto => producto.category === "Adhesivos")
 
- productosSection(adhesivosFilter, productosAdhesivos);
- productosSeccionCantidad.innerHTML=`${adhesivosFilter.length} Productos`
- 
+    productosSection(adhesivosFilter, productosAdhesivos);
+    productosSeccionCantidad.innerHTML = `${adhesivosFilter.length} Productos`
 
-})
+
+  })
+  
 
 
 // GENERAMOS SECCIONES EN INDEX
 
-  
- 
+
+
 
 

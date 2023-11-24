@@ -1,8 +1,8 @@
 
 
-const btnComprar = document.querySelectorAll(".btn-comprar");
-btnComprar.forEach(boton => boton.addEventListener("click", () => {
-}))
+// const btnComprar = document.querySelectorAll(".btn-comprar");
+// btnComprar.forEach(boton => boton.addEventListener("click", () => {
+// }))
 // INDEX SECTIONS
 const productosDestacadosIndex = document.querySelector(".productos-destacados-index");
 const adhesivosIndex = document.querySelector(".section-adhesivos");
@@ -34,6 +34,19 @@ const agendasIndex = document.querySelector(".agendas-section");
     }
 
 
+    function crearPagina(e) {
+      console.log("hola")
+console.log(e.target.id)
+      const mainIndex=document.querySelector(".main-index")
+      mainIndex.innerHTML=``
+      mainIndex.innerHTML=`<button class="btn-volver">Volver</button>`
+      const btnVolver=document.querySelector(".btn-volver")
+      btnVolver.addEventListener("click", volver)
+      function volver(){
+        location.reload()
+      }
+      }
+
 fetch('./proddata.json')
   .then((res) => res.json())
   .then((datos) => {
@@ -51,9 +64,14 @@ fetch('./proddata.json')
     productosIndex(cuadrosFilter, cuadrosIndex)
     productosIndex(agendasFilter, agendasIndex)
     productosIndex(datos, productosDestacadosIndex)
-
+   
+  
+  const btnComprar = document.querySelectorAll(".btn-comprar");
+  btnComprar.forEach(boton => boton.addEventListener("click",crearPagina ))
+  
 
   })
+ 
 
   
 
