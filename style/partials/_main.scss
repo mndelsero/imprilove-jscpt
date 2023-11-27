@@ -309,6 +309,25 @@
         }
     }
 }
+.btn-volver{
+  
+   
+    
+        font-size: 1.5rem;
+        align-self: center;
+        color: white;
+        background-color: #68c4a1;
+        padding-block: 0.5rem;
+        padding-inline: 2rem;
+        border-radius: 5px;
+
+        &:hover {
+            color: rgb(124, 174, 124);
+            transition: 0.5s;
+            background-color: brown;
+        }
+    
+}
 
 .producto-section {
     display: flex;
@@ -388,7 +407,7 @@
 
                     span{padding: 1rem;
                         background-color: rgb(207, 212, 44);
-                        border-radius: 50%;
+                        border-radius: 1rem;
                     }
                 }
 

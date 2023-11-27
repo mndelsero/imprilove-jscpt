@@ -98,7 +98,7 @@
       {
         "productId": 12,
         "category":"Agendas-Papeleria",
-          "name": "agenda-notas",
+          "name": "agenda notas",
        "price": 4100,
        "image":"./imgs/images (5).jpeg",
        "stock":40
@@ -107,7 +107,7 @@
       {
         "productId": 13,
         "category":"Agendas-Papeleria",
-          "name": "album-retro",
+          "name": "album retro",
        "price": 5600,
        "image":"./imgs/images (5).jpeg",
        "stock":40
@@ -116,7 +116,7 @@
       {
         "productId": 14,
         "category":"Agendas-Papeleria",
-          "name": "Marcador-color",
+          "name": "Marcador color",
        "price": 3000,
        "image":"./imgs/images (5).jpeg",
        "stock":40
@@ -124,7 +124,7 @@
       },
       {
         "productId": 15,
-        "category":"Cuadros-Fotografias",
+        "category":"Cuadros Fotografias",
           "name": "20x20",
        "price": 4000,
        "image":"./imgs/2022-08-29.jpg",
@@ -132,7 +132,7 @@
       },
       {
         "productId": 16,
-        "category":"Cuadros-Fotografias",
+        "category":"Cuadros Fotografias",
           "name": "20x40",
        "price": 4500,
        "image":"./imgs/2022-08-29.jpg",
