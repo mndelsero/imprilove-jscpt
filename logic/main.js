@@ -1,3 +1,5 @@
+
+
 // INDEX SECTIONS
 const productosDestacadosIndex = document.querySelector(".productos-destacados-index");
 const adhesivosIndex = document.querySelector(".section-adhesivos");
@@ -27,12 +29,14 @@ function productosIndex(categoria, section) {
   });
 }
 
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
 function extraerNumeroDeVariable(variable) {
   const numeroExtraido = parseInt(variable.slice(8));
   return isNaN(numeroExtraido) ? null : numeroExtraido;
 }
-
-function crearPagina(e) {
+ function crearPagina(e) {
   const mainIndex = document.querySelector(".main-index")
   const esteId = e.target.id
   const nuevoId = extraerNumeroDeVariable(esteId);
@@ -90,9 +94,13 @@ function crearPagina(e) {
       function volver() {
         location.reload()
       }
-
+ scrollToTop()
     })
 }
+
+
+
+
 
 fetch('./proddata.json')
   .then((res) => res.json())
@@ -115,7 +123,6 @@ fetch('./proddata.json')
     const btnComprar = document.querySelectorAll(".btn-comprar");
     btnComprar.forEach(boton => boton.addEventListener("click", crearPagina))
 })
-
 
 
 
