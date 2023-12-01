@@ -34,10 +34,6 @@ function crearHeader(){
 }
 crearHeader()
 
-
-
-
-
 function crearFooter(){
     let footerContent=document.createElement('div')
     footerContent.setAttribute(`class`, `footer-content`);

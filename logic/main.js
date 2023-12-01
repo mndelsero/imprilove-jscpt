@@ -8,6 +8,9 @@ const cumpleIndex = document.querySelector(".section-cumple");
 const marketingIndex = document.querySelector(".section-marketing");
 const cuadrosIndex = document.querySelector(".section-cuadros");
 const agendasIndex = document.querySelector(".agendas-section");
+const footer=document.querySelector(".pie-de-pagina")
+const header=document.querySelector(".header")
+
 
 function productosIndex(categoria, section) {
   section.innerHTML = ``
@@ -20,7 +23,7 @@ function productosIndex(categoria, section) {
         <p class="card-name">${producto.name}</p>
           <p class="card-text"> ${producto.price}$ pesos</p>
           <p>Stock disponible:${producto.stock}</p>
-          <a href="">
+          <a href="${producto.link}">
             <h5 class="card-title">${producto.category}</h5>
           </a>
           <button href="" class="btn-comprar" id="producto${producto.productId}">Comprar</button>
@@ -74,22 +77,22 @@ function extraerNumeroDeVariable(variable) {
               <h5>Descripcion</h5>
               <p>Descripcion producto</p>
               <h4>Incluye:</h4>
-              <li>tal</li>
-              <li>tal</li>
-              <li>tal</li>
-              <li>tal</li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+              </li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+              </li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+              </li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+              </li>
             </div>
       </div>
     </div>
     
         </section>
     `
-      }
-
-      )
-
-
-      const btnVolver = document.querySelector(".btn-volver")
+      })
+const btnVolver = document.querySelector(".btn-volver")
       btnVolver.addEventListener("click", volver)
       function volver() {
         location.reload()
@@ -123,6 +126,105 @@ fetch('./proddata.json')
     const btnComprar = document.querySelectorAll(".btn-comprar");
     btnComprar.forEach(boton => boton.addEventListener("click", crearPagina))
 })
+
+function crearHeader(){
+  let headerContent=document.createElement('div')
+  headerContent.setAttribute(`class`, `header-content`);
+  headerContent.innerHTML=
+  `
+  <div class="compras-contacto">
+    <h5>Compras al Whatsapp +569 2204 3628. Envíos a todo Chile - Retiros en taller previa coordinación.</h5>
+  </div>
+  <div class="center-menu-section row">
+    <div class="redes col-4 text-center">
+      <a href="https://www.facebook.com/imprilove.cl/" class="face-link">
+        <img src="./imgs/facebook-app-symbol.png" alt="">
+      </a>
+      <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
+        <img src="./imgs/whatsapp (1).png" alt="">
+      </a>
+      <a href="https://www.instagram.com/imprilove.cl/">
+        <img src="./imgs/instagram (1).png" alt="">
+      </a>
+    </div>
+    <section class="logo col-4 text-center">
+      <a href="./index.html" class="logo-link">
+        <img src="./imgs/logo.jpg" alt="">
+      </a>
+    </section>
+
+    <section class="buscador col-4 text-center">
+      <a href="" class="buscar">
+        <img src="./imgs/magnifying-glass.png" alt="">
+      </a>
+    </section>
+  </div>
+  `
+
+
+  header.appendChild(headerContent)
+}
+crearHeader()
+
+
+
+function crearFooter(){
+  let footerContent=document.createElement('div')
+  footerContent.setAttribute(`class`, `footer-content`);
+  footerContent.innerHTML=
+  `<div class="datos">
+  <section class="sobre-nosotros">
+    <h5>SOBRE NOSOTROS</h5>
+    <p>
+      Tienda de productos exclusivos <br> diseñados y elaborados con mucho <br> amor y dedicación. <br> Contamos con
+      una linea de
+      productos <br> personalizados, para regalar y otros <br> especiales para emprendedores.</p>
+  </section>
+  <section class="contacto">
+    <h5>CONTACTO</h5>
+    <a href="mailto:mndelsero@gmail.com">.laddetallitosamadosyloy@gmail.com</a>
+    <a href="https://wa.me/56922043628" target="_blank">+56922043628</a>
+  </section>
+  <section class="menu-pie">
+    <h5>MENU</h5>
+    <a href="./pages/contacto.html">CONTACTO</a>
+    <a href="./pages/adhesivos.html">ADHESIVOS</a>
+    <a href="./pages/agendas-papeleria.html">AGENDAS Y PAPELERIA</a>
+    <a href="./pages/como-comprar.html">COMO COMPRAR</a>
+    <a href="./pages/fotografias-cuadros.html">FOTOGRAFÍAS Y CUADROS</a>
+    <a href="./pages/kit-cumpleanios.html">KIT PARA CUMPLEAÑOS</a>
+    <a href="./pages/marketing.html"> MARKETING</a>
+    <a href="./pages/regalos.html">REGALOS</a>
+    <a href="./pages/tarjeteria.html">TARJETERÍA</a>
+    <a href="./index.html">INICIO</a>
+  </section>
+  <section class="siguenos">
+    <h5>SIGUENOS</h5>
+    <div class="siguenos-redes">
+      <a href="https://www.facebook.com/imprilove.cl/" class="face-link">
+        <img src="./imgs/facebook-app-symbol.png" alt="">
+      </a>
+      <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
+        <img src="./imgs/whatsapp (1).png" alt="">
+      </a>
+      <a href="https://www.instagram.com/imprilove.cl/">
+        <img src="./imgs/instagram (1).png" alt="">
+      </a>
+    </div>
+</div>
+<section class="pie-final">
+  <p> © 2023 Tienda LadyLoy . <br>
+    Todos los derechos reservados. Powered by Jumpseller.</p>
+  <a href="./index.html" class="logo-link">
+    <img src="./imgs/logo.jpg" alt="">
+  </a>
+</section>
+`
+footer.appendChild(footerContent)
+
+}
+crearFooter()
+
 
 
 

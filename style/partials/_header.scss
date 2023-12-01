@@ -16,6 +16,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        width: 100%;
 
         .redes {
             padding: 1rem;
@@ -94,6 +95,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
+        padding: 0rem;
 
         li {
             padding: 1rem;
