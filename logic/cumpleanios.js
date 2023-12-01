@@ -125,13 +125,13 @@ function crearHeader(){
 </div>
 <div class="center-menu-section row">
   <div class="redes col-4 text-center">
-      <a href="http://" class="face-link">
+      <a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
           <img src="../imgs/facebook-app-symbol.png" alt="">
       </a>
-      <a href="http://" class="wsp-link">
+      <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
           <img src="../imgs/whatsapp (1).png" alt="">
       </a>
-      <a href="http://"><img src="../imgs/instagram (1).png" alt=""></a>
+      <a href="https://www.instagram.com/imprilove.cl/" target="_blank"><img src="../imgs/instagram (1).png" alt=""></a>
   </div>
   <section class="logo col-4 text-center">
       <a href="../index.html" class="logo-link">
@@ -166,7 +166,7 @@ function crearFooter(){
   </section>
   <section class="contacto">
       <h5>CONTACTO</h5>
-      <a href="">.laddetallitosamadosyloy@gmail.com</a>
+      <a href="mailto:mndelsero@gmail.com">.laddetallitosamadosyloy@gmail.com</a>
       <a href="https://wa.me/56922043628" target="_blank">+56922043628</a>
   </section>
   <section class="menu-pie">
@@ -184,13 +184,13 @@ function crearFooter(){
   </section>
   <section class="siguenos">
       <h5>SIGUENOS</h5>
-      <div class="siguenos-redes"><a href="https://www.facebook.com/imprilove.cl/" class="face-link">
+      <div class="siguenos-redes"><a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
               <img src="../imgs/facebook-app-symbol.png" alt="">
           </a>
           <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
               <img src="../imgs/whatsapp (1).png" alt="">
           </a>
-          <a href="https://www.instagram.com/imprilove.cl/"><img src="../imgs/instagram (1).png" alt=""></a>
+          <a href="https://www.instagram.com/imprilove.cl/" target="_blank"><img src="../imgs/instagram (1).png" alt=""></a>
       </div>
 </div>
 <section class="pie-final">

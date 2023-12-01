@@ -137,13 +137,13 @@ function crearHeader(){
   </div>
   <div class="center-menu-section row">
     <div class="redes col-4 text-center">
-      <a href="https://www.facebook.com/imprilove.cl/" class="face-link">
+      <a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
         <img src="./imgs/facebook-app-symbol.png" alt="">
       </a>
       <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
         <img src="./imgs/whatsapp (1).png" alt="">
       </a>
-      <a href="https://www.instagram.com/imprilove.cl/">
+      <a href="https://www.instagram.com/imprilove.cl/" target="_blank">
         <img src="./imgs/instagram (1).png" alt="">
       </a>
     </div>
@@ -201,13 +201,13 @@ function crearFooter(){
   <section class="siguenos">
     <h5>SIGUENOS</h5>
     <div class="siguenos-redes">
-      <a href="https://www.facebook.com/imprilove.cl/" class="face-link">
+      <a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
         <img src="./imgs/facebook-app-symbol.png" alt="">
       </a>
       <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
         <img src="./imgs/whatsapp (1).png" alt="">
       </a>
-      <a href="https://www.instagram.com/imprilove.cl/">
+      <a href="https://www.instagram.com/imprilove.cl/" target="_blank">
         <img src="./imgs/instagram (1).png" alt="">
       </a>
     </div>
