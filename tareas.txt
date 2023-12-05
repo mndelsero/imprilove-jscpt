@@ -1,0 +1,20 @@
+cambiar funcion del boton y pasarla a la tarjetita!        HECHO
+
+estilar seccion proddetail con pagina de ejemplo!        HECHO
+
+armar funcion de productos relacionados!! etiquetas en el jason para generar tarjetitas   HECHOOOO
+
+ARMAR UN BUSCADOR una funcion tocapletter y que busque en el array de prod, tambien con la busqueda de el inicio de la palabra o el fin
+
+armar funciones del carrito FORMULARIO RAPIDO Y ENVIO
+
+dejar lista funcion de contacto y de pedido! con mail que no vaya a span!   sendgrid
+
+meter base de datos y actualizar generaciones de elementos!
+
+actualizar paleta de colores, form en contacto para hacer pedidos, y seccion como comprar!
+
+
+responsive full responsiveeee!!!!
+
+subir a hosting y dominio!!!

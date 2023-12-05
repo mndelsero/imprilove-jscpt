@@ -1,6 +1,6 @@
 .productos-destacados-index {
     display: grid;
-grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: (6, 1fr);
     padding-inline: 5rem;
     gap: 1rem;
@@ -27,9 +27,9 @@ grid-template-columns: repeat(4, 1fr);
         align-items: center;
         padding: 1rem;
 
-
+        border: 0px;
         width: 20rem;
-        border: solid rgb(158, 128, 152) 0.5px;
+
 
         &:hover {
             transition: 0.5s;
@@ -68,7 +68,7 @@ grid-template-columns: repeat(4, 1fr);
 
                 &:hover {
                     transition: 0.5s;
-                    color:$buttonHoverColor;
+                    color: $buttonHoverColor;
                     border: solid $buttonHoverColor 2px;
 
                     background-color: $mainColor;
@@ -93,7 +93,7 @@ grid-template-columns: repeat(4, 1fr);
     border-radius: 5px;
     align-self: center;
 
-    &:hover{
+    &:hover {
         background-color: $mainColor;
         color: $buttonHoverColor;
     }
@@ -134,7 +134,7 @@ grid-template-columns: repeat(4, 1fr);
         padding: 1rem;
         margin-block: 1rem;
         width: 20rem;
-        border: solid rgb(158, 128, 152) 0.5px;
+        border: 0px;
 
         &:hover {
             transition: 0.5s;
@@ -173,10 +173,10 @@ grid-template-columns: repeat(4, 1fr);
                 border: none;
 
                 &:hover {
-                   
+
                     transition: 0.5s;
-                    color:$buttonHoverColor;
-                   border: solid $buttonHoverColor 2px;
+                    color: $buttonHoverColor;
+                    border: solid $buttonHoverColor 2px;
                     background-color: $mainColor;
                     font-weight: bold;
                 }

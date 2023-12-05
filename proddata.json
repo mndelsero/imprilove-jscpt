@@ -6,7 +6,10 @@
        "price": 1200,
        "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
        "stock":40,
-       "link":"./pages/adhesivos.html"
+       "link":"./pages/adhesivos.html",
+       "related":"profesional"
+       
+       
       },
       {
         "productId": 2,
@@ -15,7 +18,8 @@
        "price": 1300,
        "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
        "stock":40,
-       "link":"./pages/adhesivos.html"
+       "link":"./pages/adhesivos.html",
+       "related":"eventos"
 
       },
       {
@@ -25,7 +29,8 @@
        "price": 1500,
        "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
        "stock":40,
-       "link":"./pages/adhesivos.html"
+       "link":"./pages/adhesivos.html",
+       "related":"eventos"
 
       },
       {
@@ -35,7 +40,8 @@
        "price": 2000,
        "image": "./imgs/279133804_163045552757056_7324596127039856605_n.jpg",
        "stock":40,
-       "link":"./pages/adhesivos.html"
+       "link":"./pages/adhesivos.html",
+       "related":"utileria"
 
       },
       {
@@ -45,7 +51,8 @@
        "price": 5000,
        "image":"./imgs/descarga.jpeg",
        "stock":40,
-       "link":"./pages/kit-cumpleanios.html"
+       "link":"./pages/kit-cumpleanios.html",
+       "related":"eventos"
       },
       {
         "productId": 6,
@@ -54,7 +61,8 @@
        "price": 5500,
        "image":"./imgs/descarga.jpeg",
        "stock":40,
-       "link":"./pages/kit-cumpleanios.html"
+       "link":"./pages/kit-cumpleanios.html",
+       "related":"regalar"
 
       },
       {
@@ -64,7 +72,8 @@
        "price": 5500,
        "image":"./imgs/descarga.jpeg",
        "stock":40,
-       "link":"./pages/kit-cumpleanios.html"
+       "link":"./pages/kit-cumpleanios.html",
+       "related":"eventos"
 
       },
       {
@@ -74,7 +83,8 @@
        "price": 3000,
        "image":"./imgs/descarga.jpeg",
        "stock":40,
-       "link":"./pages/kit-cumpleanios.html"
+       "link":"./pages/kit-cumpleanios.html",
+       "related":"eventos"
 
       },
       {
@@ -84,7 +94,8 @@
        "price": 5000,
        "image":"./imgs/descarga.jpeg",
        "stock":40,
-       "link":"./pages/kit-cumpleanios.html"
+       "link":"./pages/kit-cumpleanios.html",
+       "related":"eventos"
 
       },
       {
@@ -94,7 +105,8 @@
        "price": 5500,
        "image":"./imgs/descarga.jpeg",
        "stock":40,
-       "link":"./pages/kit-cumpleanios.html"
+       "link":"./pages/kit-cumpleanios.html",
+       "related":"emprendimientos"
 
       },
       {
@@ -104,7 +116,8 @@
        "price": 6000,
        "image":"./imgs/images (5).jpeg",
        "stock":40,
-       "link": "./pages/agendas-papeleria.html"
+       "link": "./pages/agendas-papeleria.html",
+       "related":"profesional"
       },
       {
         "productId": 12,
@@ -113,7 +126,8 @@
        "price": 4100,
        "image":"./imgs/images (5).jpeg",
        "stock":40,
-       "link": "./pages/agendas-papeleria.html"
+       "link": "./pages/agendas-papeleria.html",
+       "related":"profesional"
 
       },
       {
@@ -123,7 +137,8 @@
        "price": 5600,
        "image":"./imgs/images (5).jpeg",
        "stock":40,
-       "link": "./pages/agendas-papeleria.html"
+       "link": "./pages/agendas-papeleria.html",
+       "related":"regalar"
 
       },
       {
@@ -133,7 +148,8 @@
        "price": 3000,
        "image":"./imgs/images (5).jpeg",
        "stock":40,
-       "link": "./pages/agendas-papeleria.html"
+       "link": "./pages/agendas-papeleria.html",
+       "related":"utileria"
 
       },
       {
@@ -143,7 +159,8 @@
        "price": 4000,
        "image":"./imgs/2022-08-29.jpg",
        "stock":40,
-       "link":"./pages/fotografias-cuadros.html"
+       "link":"./pages/fotografias-cuadros.html",
+       "related":"regalar"
       },
       {
         "productId": 16,
@@ -152,7 +169,8 @@
        "price": 4500,
        "image":"./imgs/2022-08-29.jpg",
        "stock":40,
-       "link":"./pages/fotografias-cuadros.html"
+       "link":"./pages/fotografias-cuadros.html",
+       "related":"regalar"
       },
       {
         "productId": 17,
@@ -161,7 +179,8 @@
        "price": 5000,
        "image":"./imgs/2022-08-29.jpg",
        "stock":40,
-       "link":"./pages/fotografias-cuadros.html"
+       "link":"./pages/fotografias-cuadros.html",
+       "related":"regalar"
       },
       {
         "productId": 18,
@@ -170,7 +189,8 @@
        "price": 4000,
        "image":"./imgs/2022-08-29.jpg",
        "stock":40,
-       "link":"./pages/fotografias-cuadros.html"
+       "link":"./pages/fotografias-cuadros.html",
+       "related":"regalar"
       },
       {
         "productId": 19,
@@ -179,7 +199,8 @@
        "price": 4000,
        "image":"./imgs/2022-08-29.jpg",
        "stock":40,
-       "link":"./pages/fotografias-cuadros.html"
+       "link":"./pages/fotografias-cuadros.html",
+       "related":"regalar"
       },
       {
         "productId": 20,
@@ -188,7 +209,8 @@
        "price": 2000,
        "image":"./imgs/2023-01-06 (2).jpg",
        "stock":40,
-       "link":"./pages/marketing.html"
+       "link":"./pages/marketing.html",
+       "related":"emprendimientos"
       },
       {
         "productId": 21,
@@ -197,7 +219,8 @@
        "price": 6000,
        "image":"./imgs/2023-01-06 (2).jpg",
        "stock":39,
-       "link":"./pages/marketing.html"
+       "link":"./pages/marketing.html",
+       "related":"emprendimientos"
       },
       {
         "productId": 22,
@@ -206,7 +229,8 @@
        "price": 10000,
        "image":"./imgs/2023-01-06 (2).jpg",
        "stock":40,
-       "link":"./pages/marketing.html"
+       "link":"./pages/marketing.html",
+       "related":"emprendimientos"
       },
       {
         "productId": 23,
@@ -215,7 +239,8 @@
        "price": 4500,
        "image":"./imgs/2023-01-06 (2).jpg",
        "stock":40,
-       "link":"./pages/marketing.html"
+       "link":"./pages/marketing.html",
+       "related":"profesional"
       },
       {
         "productId": 24,
@@ -224,7 +249,8 @@
        "price": 4000,
        "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
        "stock":40,
-       "link":"./pages/tarjeteria.html"
+       "link":"./pages/tarjeteria.html",
+       "related":"eventos"
 
       },
       {
@@ -234,7 +260,8 @@
        "price": 3800,
        "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
        "stock":40,
-       "link":"./pages/tarjeteria.html"
+       "link":"./pages/tarjeteria.html",
+       "related":"eventos"
 
       },
       {
@@ -244,7 +271,8 @@
        "price": 3000,
        "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
        "stock":40,
-       "link":"./pages/tarjeteria.html"
+       "link":"./pages/tarjeteria.html",
+       "related":"profesional"
 
       },
       {
@@ -254,7 +282,8 @@
        "price": 5000,
        "image":"./imgs/t-cumple-071-8ad0ee1685a96e31a815858638466179-1024-1024.jpg",
        "stock":40,
-       "link":"./pages/tarjeteria.html"
+       "link":"./pages/tarjeteria.html",
+       "related":"profesional"
 
       }
 

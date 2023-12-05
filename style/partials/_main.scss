@@ -80,7 +80,6 @@
     display: flex;
     flex-direction: column;
     padding-inline: 2rem;
-    align-items: center;
 
 
     h2 {
@@ -91,7 +90,7 @@
         padding-inline: 25rem;
         display: flex;
         flex-direction: column;
-     
+
 
         img {
             border-radius: 2rem;
@@ -335,22 +334,130 @@
 
 }
 
+.related-prods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .related-prod-sctn {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-inline: 2rem;
+        width: 75%;
+        gap: 0rem;
+        justify-items: center;
+        align-items: center;
+
+        .card-related {
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.5rem;
+            align-items: center;
+            width: 15rem;
+            padding: 1rem;
+
+            &:hover {
+                transition: 0.5s;
+                transform: scale(1.02);
+                transform: translateY(-5px);
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+            }
+
+
+
+            img {
+                width: 12rem;
+                height: 10rem;
+                border-radius: 5px;
+
+            }
+
+            .related-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                h3 {
+                    font-weight: 600;
+                    color: $mainColor;
+                }
+
+                h5 {
+                    color: $linkHoverColor;
+                }
+
+                p {}
+            }
+        }
+
+    }
+}
+
+
 .producto-section {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 0rem;
+    margin: 2rem;
+    border: solid violet 1px;
+    border-radius: 2rem;
+    width: 90vw;
+    align-self: center;
+
+
+    .producto-tit {
+        background-color: #e7e7e7;
+        padding-block: 0.5rem;
+        padding-inline: 2rem;
+        margin: 0rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        border-radius: 2rem 2rem 0rem 0rem;
+    }
+
+    .dir-producto {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        color: #999999;
+        font-weight: 900;
+        padding-inline: 3rem;
+        padding-block: 0.5rem;
+
+
+        a {
+            font-size: 1rem;
+            padding: 0rem;
+            color: $menuColor ;
+            border-radius: 5px;
+
+            &:hover {
+
+                transition: 0.5s;
+                color: #385d47;
+            }
+
+        }
+
+    }
 
     .mostrador-producto {
-        border-radius: 2rem;
-        padding: 5rem;
+        padding-bottom: 1rem;
         display: flex;
-        border: solid violet 1px;
-        background-color: #e7e7e7;
-        justify-content: space-around;
+        padding-inline: 3rem;
+
+        justify-content: space-evenly;
 
         img {
-            width: 40rem;
-            border-radius: 1rem;
+            padding: 0.2rem;
+            width: 30rem;
+
+            border: solid #999999 1px;
         }
 
         .prod-detail {
@@ -359,27 +466,128 @@
             align-items: center;
             padding-inline: 2rem;
 
+
             .producto-intro {
+                width: 100%;
 
                 .intro-nombre {
+                    width: 100%;
                     color: rgb(237, 133, 227);
+                    margin: 0;
+                    border-bottom: solid rgb(237, 133, 227) 2px;
+                    font-size: 2rem;
                 }
 
-                h5 {
-                    font-weight: 700;
-                    font-size: 2rem;
+                .prod-form {
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .prod-form-in {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        label {
+                            font-size: 1.5rem;
+
+                        }
+
+
+                        select {
+                            padding: 0.5rem;
+                            font-size: 1.5rem;
+                            width: 100%;
+                            border-radius: 5px;
+                            color: $linkHoverColor;
+                            border-width: 1px 1px 3px 1px;
+                            -webkit-box-shadow: none;
+                            box-shadow: none;
+                            background-color: #fff;
+
+
+                            &:focus {
+                                border-color: $mainColor;
+                                border-width: 1px 1px 3px 1px;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                            }
+
+                            &:focus-visible {
+                                outline: none;
+                                border-radius: 3px;
+                            }
+                        }
+
+                        input {
+                            padding: 0.5rem;
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                            border-radius: 5px;
+                            border-style: solid;
+                            width: 100%;
+                            color: $linkHoverColor;
+                            border-width: 1px 1px 3px 1px;
+                            -webkit-box-shadow: none;
+                            box-shadow: none;
+                            background-color: #fff;
+
+
+                            &:focus {
+                                border-color: $mainColor;
+                                border-width: 1px 1px 3px 1px;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                            }
+
+                            &:focus-visible {
+                                outline: none;
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .prod-total-price {
+                color: $linkHoverColor;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                padding: 0.2rem;
+                width: 100%;
+
+                h4 {
+                    font-size: 1.8rem;
+                    color: $linkHoverColor;
+                    font-weight: 900;
+                    margin: 0;
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                P {
+                    font-size: 1rem;
+                    margin: 0;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                    color: #777777;
                 }
             }
 
             .contacto-producto {
                 display: flex;
                 flex-direction: column;
-                padding: 1rem;
+                padding: 0.2rem;
                 gap: 3px;
 
                 h4 {
                     font-family: 'Comming', sans-serif;
                     font-size: 3rem;
+                    margin: 0;
                 }
 
                 button {
@@ -404,47 +612,6 @@
             }
 
 
-            .cant-producto-sctn {
-                display: flex;
-                flex-direction: column;
-
-                p {
-                    font-family: 'Comming', sans-serif;
-                    font-size: 2rem;
-
-                    span {
-                        padding: 1rem;
-                        background-color: rgb(207, 212, 44);
-                        border-radius: 1rem;
-                    }
-                }
-
-                .contador {
-                    display: flex;
-                    justify-content: space-between;
-
-
-
-                    button {
-                        border: 2px black;
-                        font-size: 3rem;
-
-                        align-self: center;
-                        color: white;
-                        background-color: #68c4a1;
-
-                        padding-inline: 1.5rem;
-                        border-radius: 5px;
-
-                        &:hover {
-                            color: rgb(33, 82, 33);
-                            transition: 0.5s;
-                            background-color: rgb(237, 133, 227);
-                        }
-
-                    }
-                }
-            }
 
             .info-producto {
                 display: flex;
@@ -454,11 +621,20 @@
                     font-weight: 700;
                     font-size: 2rem;
                     color: rgb(237, 133, 227);
+                    margin: 0;
                 }
 
-                p {}
+                h4 {
+                    margin: 0;
+                }
 
-                li {}
+                p {
+                    margin: 0;
+                }
+
+                li {
+                    margin: 0;
+                }
 
             }
         }

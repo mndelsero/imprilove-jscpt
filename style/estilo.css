@@ -174,7 +174,6 @@ h2 {
   display: flex;
   flex-direction: column;
   padding-inline: 2rem;
-  align-items: center;
 }
 .main-section h2 {
   align-self: center;
@@ -369,22 +368,102 @@ h2 {
   border: solid #385d47 2px;
 }
 
+.related-prods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.related-prods .related-prod-sctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-inline: 2rem;
+  width: 75%;
+  gap: 0rem;
+  justify-items: center;
+  align-items: center;
+}
+.related-prods .related-prod-sctn .card-related {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  align-items: center;
+  width: 15rem;
+  padding: 1rem;
+}
+.related-prods .related-prod-sctn .card-related:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.related-prods .related-prod-sctn .card-related img {
+  width: 12rem;
+  height: 10rem;
+  border-radius: 5px;
+}
+.related-prods .related-prod-sctn .card-related .related-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.related-prods .related-prod-sctn .card-related .related-info h3 {
+  font-weight: 600;
+  color: rgb(206, 155, 193);
+}
+.related-prods .related-prod-sctn .card-related .related-info h5 {
+  color: rgb(124, 174, 124);
+}
 .producto-section {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 0rem;
+  margin: 2rem;
+  border: solid violet 1px;
+  border-radius: 2rem;
+  width: 90vw;
+  align-self: center;
+}
+.producto-section .producto-tit {
+  background-color: #e7e7e7;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  margin: 0rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+.producto-section .dir-producto {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  color: #999999;
+  font-weight: 900;
+  padding-inline: 3rem;
+  padding-block: 0.5rem;
+}
+.producto-section .dir-producto a {
+  font-size: 1rem;
+  padding: 0rem;
+  color: rgb(168, 168, 168);
+  border-radius: 5px;
+}
+.producto-section .dir-producto a:hover {
+  transition: 0.5s;
+  color: #385d47;
 }
 .producto-section .mostrador-producto {
-  border-radius: 2rem;
-  padding: 5rem;
+  padding-bottom: 1rem;
   display: flex;
-  border: solid violet 1px;
-  background-color: #e7e7e7;
-  justify-content: space-around;
+  padding-inline: 3rem;
+  justify-content: space-evenly;
 }
 .producto-section .mostrador-producto img {
-  width: 40rem;
-  border-radius: 1rem;
+  padding: 0.2rem;
+  width: 30rem;
+  border: solid #999999 1px;
 }
 .producto-section .mostrador-producto .prod-detail {
   display: flex;
@@ -392,22 +471,103 @@ h2 {
   align-items: center;
   padding-inline: 2rem;
 }
-.producto-section .mostrador-producto .prod-detail .producto-intro .intro-nombre {
-  color: rgb(237, 133, 227);
+.producto-section .mostrador-producto .prod-detail .producto-intro {
+  width: 100%;
 }
-.producto-section .mostrador-producto .prod-detail .producto-intro h5 {
-  font-weight: 700;
+.producto-section .mostrador-producto .prod-detail .producto-intro .intro-nombre {
+  width: 100%;
+  color: rgb(237, 133, 227);
+  margin: 0;
+  border-bottom: solid rgb(237, 133, 227) 2px;
   font-size: 2rem;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form {
+  display: flex;
+  flex-direction: column;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in label {
+  font-size: 1.5rem;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in select {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 5px;
+  color: rgb(124, 174, 124);
+  border-width: 1px 1px 3px 1px;
+  box-shadow: none;
+  background-color: #fff;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in select:focus {
+  border-color: rgb(206, 155, 193);
+  border-width: 1px 1px 3px 1px;
+  box-shadow: none;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in select:focus-visible {
+  outline: none;
+  border-radius: 3px;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border-style: solid;
+  width: 100%;
+  color: rgb(124, 174, 124);
+  border-width: 1px 1px 3px 1px;
+  box-shadow: none;
+  background-color: #fff;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in input:focus {
+  border-color: rgb(206, 155, 193);
+  border-width: 1px 1px 3px 1px;
+  box-shadow: none;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-form .prod-form-in input:focus-visible {
+  outline: none;
+  border-radius: 3px;
+}
+.producto-section .mostrador-producto .prod-detail .prod-total-price {
+  color: rgb(124, 174, 124);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0.2rem;
+  width: 100%;
+}
+.producto-section .mostrador-producto .prod-detail .prod-total-price h4 {
+  font-size: 1.8rem;
+  color: rgb(124, 174, 124);
+  font-weight: 900;
+  margin: 0;
+}
+.producto-section .mostrador-producto .prod-detail .prod-total-price h4 span {
+  font-size: 0.8rem;
+}
+.producto-section .mostrador-producto .prod-detail .prod-total-price P {
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #777777;
 }
 .producto-section .mostrador-producto .prod-detail .contacto-producto {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.2rem;
   gap: 3px;
 }
 .producto-section .mostrador-producto .prod-detail .contacto-producto h4 {
   font-family: "Comming", sans-serif;
   font-size: 3rem;
+  margin: 0;
 }
 .producto-section .mostrador-producto .prod-detail .contacto-producto button {
   border: 2px black;
@@ -424,37 +584,6 @@ h2 {
   transition: 0.5s;
   background-color: rgb(237, 133, 227);
 }
-.producto-section .mostrador-producto .prod-detail .cant-producto-sctn {
-  display: flex;
-  flex-direction: column;
-}
-.producto-section .mostrador-producto .prod-detail .cant-producto-sctn p {
-  font-family: "Comming", sans-serif;
-  font-size: 2rem;
-}
-.producto-section .mostrador-producto .prod-detail .cant-producto-sctn p span {
-  padding: 1rem;
-  background-color: rgb(207, 212, 44);
-  border-radius: 1rem;
-}
-.producto-section .mostrador-producto .prod-detail .cant-producto-sctn .contador {
-  display: flex;
-  justify-content: space-between;
-}
-.producto-section .mostrador-producto .prod-detail .cant-producto-sctn .contador button {
-  border: 2px black;
-  font-size: 3rem;
-  align-self: center;
-  color: white;
-  background-color: #68c4a1;
-  padding-inline: 1.5rem;
-  border-radius: 5px;
-}
-.producto-section .mostrador-producto .prod-detail .cant-producto-sctn .contador button:hover {
-  color: rgb(33, 82, 33);
-  transition: 0.5s;
-  background-color: rgb(237, 133, 227);
-}
 .producto-section .mostrador-producto .prod-detail .info-producto {
   display: flex;
   flex-direction: column;
@@ -463,7 +592,18 @@ h2 {
   font-weight: 700;
   font-size: 2rem;
   color: rgb(237, 133, 227);
+  margin: 0;
 }
+.producto-section .mostrador-producto .prod-detail .info-producto h4 {
+  margin: 0;
+}
+.producto-section .mostrador-producto .prod-detail .info-producto p {
+  margin: 0;
+}
+.producto-section .mostrador-producto .prod-detail .info-producto li {
+  margin: 0;
+}
+
 .pie-de-pagina {
   display: flex;
   flex-direction: column;
@@ -572,8 +712,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  border: 0px;
   width: 20rem;
-  border: solid rgb(158, 128, 152) 0.5px;
 }
 .productos-destacados-index .card:hover {
   transition: 0.5s;
@@ -651,7 +791,7 @@ h2 {
   padding: 1rem;
   margin-block: 1rem;
   width: 20rem;
-  border: solid rgb(158, 128, 152) 0.5px;
+  border: 0px;
 }
 .section-card .card:hover {
   transition: 0.5s;

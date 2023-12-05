@@ -90,7 +90,7 @@ function crearFooter(){
     </section>
     <section class="contacto">
         <h5>CONTACTO</h5>
-        <a href="mailto:mndelsero@gmail.com">.laddetallitosamadosyloy@gmail.com</a>
+        <a href="mailto:imprilove@gmail.com">imprilove@gmail.com</a>
         <a href="https://wa.me/56922043628" target="_blank">+56922043628</a>
     </section>
     <section class="menu-pie">

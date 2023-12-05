@@ -1,5 +1,7 @@
 // ADESIVOS SECTION
-const footer=document.querySelector(".pie-de-pagina")
+
+
+const footer = document.querySelector(".pie-de-pagina")
 
 const productosSeccionCantidad=document.querySelector(".seccion-productos-cantidad")
 
@@ -10,6 +12,8 @@ const productosSection=(categoria, section) =>{
     categoria.forEach(producto => {
       const cardSeccion = document.createElement(`div`);
       cardSeccion.setAttribute(`class`, `card`);
+      cardSeccion.id = `producto${producto.productId}`
+
       cardSeccion.innerHTML = `
       <img src=".${producto.image}" class="card-img-top" alt="...">
       <div class="card-body">
@@ -19,7 +23,6 @@ const productosSection=(categoria, section) =>{
         <a href="">
           <h5 class="card-title">${producto.category}</h5>
         </a>
-        <button href="" class="btn-comprar" id="producto${producto.productId}">Comprar</button>
       </div>`;
       section.appendChild(cardSeccion);
     });
@@ -35,7 +38,7 @@ const productosSection=(categoria, section) =>{
   }
    function crearPagina(e) {
     const mainSection= document.querySelector(".main-section")
-    const esteId = e.target.id
+    const esteId = e.currentTarget.id
     const nuevoId = extraerNumeroDeVariable(esteId);
   
     fetch('../proddata.json')
@@ -45,50 +48,107 @@ const productosSection=(categoria, section) =>{
         const traerProducto = datos.filter(producto => producto.productId === nuevoId)
         traerProducto.forEach((producto) => {
           mainSection.innerHTML = `<button class="btn-volver">Volver</button>
-      <section class="producto-section">
-      <div class="mostrador-producto">
-      <img class="img-producto" src=".${producto.image}" alt="${producto.name}">
-        <div class="prod-detail">
-          <div class="producto-intro">
-          <h5 class="intro-nombre">Categoria : ${producto.category}</h5>
-            <h5 class="intro-nombre">${producto.name}</h5>
-            <h5 >${producto.price}</h5>
-            <h5 >Stock :${producto.stock}</h5>
-          </div>
-          <div class="contacto-producto">
-            <h4>Contactanos</h4>
-            <button>Haz tu pedido</button>
-            <button>Continuar Comprando</button>
-              </div>
-              <div class="cant-producto-sctn">
-            <p>Cantidad: <span>${1}</span></p>
-                <div class="contador">
-                  <button>+</button>
-                <button>-</button>
-                </div>
-            </div>
-              <div class="info-producto">
-                <h5>Descripcion</h5>
-                <p>Descripcion producto</p>
-                <h4>Incluye:</h4>
-                <li>tal</li>
-                <li>tal</li>
-                <li>tal</li>
-                <li>tal</li>
-              </div>
-        </div>
-      </div>
+          <section class="producto-section">
+          <h3 class="producto-tit">${producto.name}</h3>
+          <div class="dir-producto">
       
-          </section>
+            <a href="/index.html">INICIO</a> >
+            <a href="/pages/adhesivos.html">${producto.category}</a> >
+            
+            
+            <a href="">${producto.name}!!</a> 
+          </div>
+      
+          <div class="mostrador-producto">
+      
+          <img class="img-producto" src=".${producto.image}" alt="${producto.name}">
+            <div class="prod-detail">
+              <div class="producto-intro">
+              <h5 class="intro-nombre">Arma tu Producto</h5>
+              <form action="" class="prod-form">
+               <div class="prod-tamanio prod-form-in">
+                <label for="">Tamaño</label>
+                <select name="" id="" aria-placeholder="posicion">
+                    <option value="" class="">Normal</option>
+                    <option value="">pequeño</option>
+                    <option value="">grande</option>
+                    <option value="">especifico</option>
+                </select>
+               </div>
+               <div class="prod-tamanio prod-form-in">
+                <label for="">Cantidad </label>
+               <input type="number" name="" id="" placeholder="1">
+               </div>
+               
+            </form>
+              </div>
+              <div class="prod-total-price">
+                <h4>TU TOTAL: <span>IVA inc</span> : $ ${producto.price}</h4>
+                
+                <p>precio unitario: $ ${producto.price} </p>
+              </div>
+              <div class="contacto-producto">
+                <h4>Contactanos</h4>
+                <button>Haz tu pedido</button>
+               
+                  </div>
+                 
+                  <div class="info-producto">
+                    <h5>Descripcion ${producto.name}</h5>
+                    <p>${producto.name}</p>
+                    <h4>Incluye:</h4>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+                    </li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+                    </li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+                    </li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatum similique repreheveniam
+                    </li>
+                  </div>
+            </div>
+          </div>
+          
+              </section>
+              <div class="related-prods">
+              <h2>Productos Relacionados</h2>
+              <div class="related-prod-sctn"></div>
+                </div>
       `
         }
   
         )
+
+        
+        function productosRelacionados(nuevoId) {
+          const relatedCardContainer = document.querySelector(".related-prod-sctn")
+          const encontrarProducto = datos.find(producto => producto.productId === nuevoId)
+          const relatedProducts = datos.filter(producto => producto.related === encontrarProducto.related)
+          relatedProducts.forEach((producto) => {
+            const cardRelated = document.createElement(`div`)
+            cardRelated.setAttribute(`class`, `card-related`);
+            cardRelated.id = `producto${producto.productId}`
+            cardRelated.innerHTML = `
+  <img src=".${producto.image}" alt="${producto.name}">
+  <div class="related-info">
+    <h3>${producto.name}</h3>
+    <h5>${producto.category}</h5>
+  <p>descripcion breve</p>`
+  
+            relatedCardContainer.appendChild(cardRelated)
+  
+          })
+        }
+        productosRelacionados(nuevoId)
+  
+        const relatedCards = document.querySelectorAll(".card-related");
+        relatedCards.forEach(card => card.addEventListener("click", crearPagina))
   
   
-        const btnVolver = document.querySelector(".btn-volver")
-        btnVolver.addEventListener("click", volver)
-        function volver() {
+  
+        const btnVolver = document.querySelectorAll(".btn-volver")
+        btnVolver.forEach(boton => boton.addEventListener("click", volver))
+                function volver() {
           location.reload()
         }
         scrollToTop()
@@ -105,9 +165,9 @@ fetch('../proddata.json')
  productosSection(tarjeteriaFilter, productosTarjeteria);
  productosSeccionCantidad.innerHTML=`${tarjeteriaFilter.length} Productos`
 
- const btnComprar = document.querySelectorAll(".btn-comprar");
- btnComprar.forEach(boton => boton.addEventListener("click", crearPagina))
-
+ const cardProducto = document.querySelectorAll(".card");
+ cardProducto.forEach(boton => boton.addEventListener("click", crearPagina))
+ 
 })
 
 const header=document.querySelector(".header")
@@ -161,7 +221,7 @@ function crearFooter(){
   </section>
   <section class="contacto">
       <h5>CONTACTO</h5>
-      <a href="mailto:mndelsero@gmail.com">.laddetallitosamadosyloy@gmail.com</a>
+      <a href="mailto:imprilove@gmail.com">imprilove@gmail.com</a>
       <a href="https://wa.me/56922043628" target="_blank">+56922043628</a>
   </section>
   <section class="menu-pie">
