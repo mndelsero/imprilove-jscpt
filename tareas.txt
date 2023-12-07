@@ -4,17 +4,18 @@ estilar seccion proddetail con pagina de ejemplo!        HECHO
 
 armar funcion de productos relacionados!! etiquetas en el jason para generar tarjetitas   HECHOOOO
 
-ARMAR UN BUSCADOR una funcion tocapletter y que busque en el array de prod, tambien con la busqueda de el inicio de la palabra o el fin
+ARMAR UN BUSCADOR una funcion tocapletter y que busque en el array de prod, tambien con la busqueda de el inicio de la palabra o el fin HECHOOO
 
-armar funciones del carrito FORMULARIO RAPIDO Y ENVIO
+Como comprar y contacto Funciones! form en contacto para hacer pedidos,
+
+armar funciones del carrito FORMULARIO RAPIDO Y ENVIO  
 
 dejar lista funcion de contacto y de pedido! con mail que no vaya a span!   sendgrid
 
-meter base de datos y actualizar generaciones de elementos!
-
-actualizar paleta de colores, form en contacto para hacer pedidos, y seccion como comprar!
-
-
 responsive full responsiveeee!!!!
+
+actualizar paleta de colores,
+
+meter base de datos y actualizar generaciones de elementos!
 
 subir a hosting y dominio!!!

@@ -24,7 +24,7 @@
             a {
                 margin: 10px;
 
-               
+
 
             }
 
@@ -39,10 +39,10 @@
                     transform: scale(1.1);
                     transform: translateY(-5px);
                     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
-                   
-                        background-color: $mainColor;
-                        transition: 0.5s;
-                   
+
+                    background-color: $mainColor;
+                    transition: 0.5s;
+
                 }
             }
         }
@@ -56,25 +56,103 @@
         }
 
         .buscador {
-            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            img {
-                width: 20px;
 
-                &:hover {
-                    transition: 0.5s;
+
+
+            .barra-buscar {
+                display: flex;
+
+                .buscar {
+                    border-radius: 4px;
+                    border: none;
+                    padding: 0.2rem;
+
+                    &:hover {
+                        transition: 0.5s;
+                        border-radius: 2px;
+                        transform: scale(1.1);
+                        transform: translateY(-5px);
+                        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+                        transition: 0.5s;
+                    }
+
+                    img {
+                        width: 20px;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    color: $linkHoverColor;
+                    font-weight: 200;
+                    border-width: 1px 1px 3px 1px;
+                    border-style: solid;
+                    border-color: #ddd;
                     border-radius: 2px;
-                    transform: scale(1.1);
-                    background-color: #e5e5e5;
-                    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
-                    ;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    background-color: #fff;
+                    padding: 0.3rem;
+
+                    &:focus {
+                        border-color: $mainColor;
+                        border-width: 1px 1px 3px 1px;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+                        border-radius: 3px;
+                    }
                 }
             }
 
-            a:hover {
-                background-color: #e5e5e5;
-                transition: 0.5s;
+            .buscador-opciones {
 
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                z-index: 998;
+                top: 12rem;
+
+                h5 {
+                    font-weight: 500;
+
+                }
+
+                option {
+
+                    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+                    @keyframes fade-in {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
+                    border: solid 0.5px #a7a7a7;
+                    border-radius: 2px;
+                    position: relative;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $linkHoverColor;
+                    }
+                }
             }
         }
     }
@@ -102,11 +180,12 @@
         }
 
 
-        a {font-size: 1.5rem;
+        a {
+            font-size: 1.5rem;
             padding-block: 1rem;
             padding-inline: 0.2rem;
             color: $menuColor ;
-            border-radius:5px;
+            border-radius: 5px;
 
             &:hover {
                 background-color: #e5e5e5;

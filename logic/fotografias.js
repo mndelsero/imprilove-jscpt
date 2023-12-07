@@ -167,6 +167,105 @@ fetch('../proddata.json')
 const cardProducto = document.querySelectorAll(".card");
 cardProducto.forEach(boton => boton.addEventListener("click", crearPagina))
 
+
+function buscarProductos() {
+  document.removeEventListener("mousedown", clickAfuera);
+  const buscador = document.getElementById("buscador");
+  const buscadorOpciones = document.querySelector(".buscador-opciones");
+
+  function verificarClick(e) {
+    const buscadorOpciones = document.querySelector(".buscador-opciones");
+    const search = document.getElementById("search")
+    if (search) {
+      if (!buscadorOpciones.contains(e.target) && e.target !== search) {
+        return true; // Se hizo clic fuera del buscador
+      }
+      return false; // El clic fue dentro del buscador
+    }
+
+  }
+
+  function clickAfuera(e) {
+    if (verificarClick(e)) {
+      // Código que se ejecutará si se hace clic fuera del buscador
+      limpiarBuscador()
+      buscarProductos()
+    }
+  }
+
+  buscador.addEventListener("click", desplegarBuscador)
+
+  function limpiarBuscador() {
+    const buscadorSctn = document.querySelector(".buscador")
+    buscadorSctn.innerHTML =
+      ` <div class="barra-buscar">
+    <button  class="buscar" id="buscador">
+      <img src="../imgs/magnifying-glass.png" alt="">
+    </button>
+  </div>
+ 
+  <div class="buscador-opciones">
+</div>`
+    buscarProductos()
+  }
+
+  function desplegarBuscador() {
+    const buscadorBarra = document.querySelector(".barra-buscar");
+    buscadorBarra.innerHTML = `
+    <button  class="buscar" id="buscador">
+    <img src="../imgs/magnifying-glass.png" alt="">
+  </button>`
+    const buscadorInput = document.createElement("input")
+    buscadorInput.type = "search"
+    buscadorInput.id = "search"
+    buscadorBarra.append(buscadorInput)
+    const search = document.getElementById("search")
+    search.addEventListener("input", filtrarProductos)
+    search.focus();
+    salir()
+
+    function salir() {
+      search.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" || e.keyCode === 27) {
+          limpiarBuscador();
+        }
+      });
+    }
+    document.addEventListener("mousedown", clickAfuera);
+
+    function filtrarProductos(e) {
+
+      buscadorOpciones.innerHTML = ` <h5>TU RESULTADO :</h5>`
+      const inputText = e.target.value.toUpperCase().trim()
+      const productosFiltrados = datos.filter(producto =>
+        producto.name.toUpperCase().startsWith(inputText) ||
+        producto.category.toUpperCase().startsWith(inputText) ||
+        producto.price.toString().startsWith(inputText)
+      );
+
+      if (productosFiltrados.length && search.value != "") {
+        productosFiltrados.forEach(producto => {
+          const opcionBusqueda = document.createElement("option")
+          opcionBusqueda.setAttribute(`class`, `opcion-de-busqueda`)
+          opcionBusqueda.id = `producto${producto.productId}`
+          opcionBusqueda.innerText = `${producto.name} -Categoria: ${producto.category} - Precio: ${producto.price} `
+          buscadorOpciones.appendChild(opcionBusqueda)
+        })
+
+        const opcionesBusqueda = document.querySelectorAll(".opcion-de-busqueda");
+        opcionesBusqueda.forEach(opcion => opcion.addEventListener("click", crearPagina))
+        opcionesBusqueda.forEach(opcion => opcion.addEventListener("click", limpiarBuscador))
+
+      } else {
+        const opcionBusqueda = document.createElement("option")
+        opcionBusqueda.innerText = `Ningun elemento del catalogo coincide con tu busqueda, intenta de nuevo!`
+        buscadorOpciones.appendChild(opcionBusqueda)
+      }
+    }
+  }
+}
+buscarProductos()
+
 })
 
 const header=document.querySelector(".header")
@@ -194,8 +293,15 @@ function crearHeader(){
       </a>
   </section>
   <section class="buscador col-4 text-center">
-      <a href="" class="buscar"><img src="../imgs/magnifying-glass.png" alt=""></a>
-  </section>
+  <div class="barra-buscar">
+    <button  class="buscar" id="buscador">
+      <img src="../imgs/magnifying-glass.png" alt="">
+    </button>
+  </div>
+ 
+  <div class="buscador-opciones">
+</div>
+</section>
 </div>
   `
 
