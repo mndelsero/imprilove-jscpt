@@ -6,20 +6,9 @@ armar funcion de productos relacionados!! etiquetas en el jason para generar tar
 
 ARMAR UN BUSCADOR una funcion tocapletter y que busque en el array de prod, tambien con la busqueda de el inicio de la palabra o el fin HECHOOO
 
-Como comprar y contacto Funciones! 
+Como comprar y contacto Funciones! HECHOOOOOOOOOOOOOOOOOOO
 
-armar funciones del carrito FORMULARIO RAPIDO Y ENVIO  
-crear el formulario para ingresar contacto del cliente
-capturar en ese mismo formulario los valores de sizes y cantidad
-dejar esos input type=hidden
-
-el action de ese nuevo formulario debe ser pedidos.php
-
-En pedidos.php poner las funciones de sendgrid para enviar los correos
-redireccionar al cliente de vuelta el index pasando un parametro por la url
-ese parametro va a accionar el sweetalert
-
-ordenar en php
+armar funciones del carrito FORMULARIO RAPIDO Y ENVIO  HECHOOOOOOOOOOO
 
 
 
@@ -28,6 +17,8 @@ responsive full responsiveeee!!!!
 actualizar paleta de colores,
 
 meter base de datos y actualizar generaciones de elementos!
+
+MEJORAR funciones de related card y de buscador si es necesario
 
 cobrar jaajjaajjaja
 

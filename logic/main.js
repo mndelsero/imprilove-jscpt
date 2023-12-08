@@ -91,14 +91,9 @@ function crearPagina(e) {
     <h4>Contactanos</h4>
     <button  id="pre-form">Haz tu pedido</button>
                    </div>
-
-                      </form>
+ </form>
 
   </div>
-  
-  
-               
-
                      <div class="info-producto">
         <h5>Descripcion ${producto.name}</h5>
         <p>${producto.name}</p>
@@ -114,11 +109,8 @@ function crearPagina(e) {
       </div>
 </div>
 </div>
-
-        
-            </section>
-
-            <div class="related-prods">
+ </section>
+ <div class="related-prods">
 <h2>Productos Relacionados</h2>
 <div class="related-prod-sctn"></div>
   </div>`;
@@ -142,16 +134,6 @@ function actualizarPrecio() {
 input.addEventListener("input", actualizarPrecio);
 select.addEventListener("change", actualizarPrecio);
 
-
-
-
-
-  
-
-
-
-
-
 const preForm =document.getElementById("pre-form")
 preForm.addEventListener("click",(e)=>{
   e.preventDefault()
@@ -161,38 +143,25 @@ const input=document.getElementById("prod-cantidad")
 const prodCantidad=input.value;
  const productoName=producto.name;
 let precioPedido=actualizarPrecio()
-console.log(productoName)
-console.log(prodSize)
-console.log(prodCantidad)
-console.log(precioPedido)
-
 const userForm=document.createElement("div")
 userForm.setAttribute("class","user-form")
 const contactoProd=document.querySelector(".contacto-producto")
-
 userForm.innerHTML=`
 <p>Pediste ${productoName}, tamaño ${prodSize},  te saldra en total $${precioPedido} por ${prodCantidad} unidad(es)</p>
 <p>Solo necesitamos tus datos para enviar tu pedido!! Rellena el formulario por favor!</p>
-
-
-<form action="https://formsubmit.co/5812ae76eac85c13f8c6886a22d45899" method="POST" class="contacto-form">
+<form action="https://formsubmit.co/imprilove@gmail.com" method="POST" class="contacto-form">
 <input type="hidden" name="cantidad" id="prod-cantidad" placeholder="1" value="${prodCantidad}" required>
 <input type="hidden" name="sizes" id="prod-size"  value="${prodSize}" required>
-
-
-<label for="">Nombre : <br> <input type="text" name="nombre" placeholder="Ingresa Tu Nombre"></label>
-<label for="">Telefono :<br><input type="tel" name="telefono" placeholder="Ingresa Tu Telefono"></label>
-<label for="">E-Mail :<br><input type="email" name="email" id="" placeholder="Ingresa Tu Mail"></label> 
+<label for="">Nombre : <br> <input type="text" name="nombre" placeholder="Ingresa Tu Nombre" required></label>
+<label for="">Telefono :<br><input type="tel" name="telefono" placeholder="Ingresa Tu Telefono" required></label>
+<label for="">E-Mail :<br><input type="email" name="email" id="" placeholder="Ingresa Tu Mail" required></label> 
 <input class="comentar" name="pedido" id="" cols="160" rows="5" placeholder="Dejanos tu pedido o comentario" type="hidden"></input>
-
 <button type="submit">ENVIAR</button> 
 </form>`
 contactoProd.innerHTML=` <h4>Contactanos</h4>`
 contactoProd.appendChild(userForm)
-
 })
-
-      })
+ })
 
 
 

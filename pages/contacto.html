@@ -82,15 +82,16 @@
                 <span> Avenida Santa Elena, Colina, Metropolitana, Chile</span>
             </div>
         </div>
-        <form action="" class="contacto-form">
-            <label for="">Nombre : <br> <input type="text" placeholder="Ingresa Tu Nombre"></label>
-            <label for="">Telefono :<br><input type="number" placeholder="Ingresa Tu Telefono"></label>
-            <label for="">E-Mail :<br><input type="email" name="" id="" placeholder="Ingresa Tu Mail"></label>   
+        <form action="https://formsubmit.co/imprilove@gmail.com" method="POST" class="contacto-form">
+            <label for="">Nombre : <br> <input type="text" name="nombre" placeholder="Ingresa Tu Nombre" required></label>
+            <label for="">Telefono :<br><input type="number" name="telefono" placeholder="Ingresa Tu Telefono" required></label>
+            <label for="">E-Mail :<br><input type="email" name="email" id="" placeholder="Ingresa Tu Mail" required></label> 
+            <div class="comentario">
+                <textarea class="comentar" name="pedido" id="" cols="160" rows="5" placeholder="Dejanos tu pedido o comentario" required></textarea>
+                <button type="submit">ENVIAR</button>
+            </div>  
         </form>
-        <div class="comentario">
-            <textarea class="comentar" name="" id="" cols="160" rows="5" placeholder="Dejanos tu pedido o comentario"></textarea>
-            <button type="submit">ENVIAR</button>
-        </div>
+       
 
     </main>
     <footer class="pie-de-pagina">

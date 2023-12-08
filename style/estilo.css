@@ -246,7 +246,7 @@ h2 {
 }
 .main-section .section-presentacion img {
   border-radius: 2rem;
-  width: 150%;
+  width: 100%;
   border: rgb(206, 155, 193) solid 1px;
 }
 .main-section .section-presentacion p {
@@ -330,11 +330,11 @@ h2 {
   color: rgb(206, 155, 193);
 }
 .main-contacto .contacto-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  align-self: center;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
 }
 .main-contacto .contacto-form label {
@@ -363,13 +363,13 @@ h2 {
   outline: none;
   border-radius: 3px;
 }
-.main-contacto .comentario {
+.main-contacto .contacto-form .comentario {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.main-contacto .comentario .comentar {
+.main-contacto .contacto-form .comentario .comentar {
   color: rgb(124, 174, 124);
   padding: 0.2rem;
   font-weight: 200;
@@ -381,20 +381,20 @@ h2 {
   background-color: #fff;
   margin-bottom: 2rem;
 }
-.main-contacto .comentario .comentar:focus {
+.main-contacto .contacto-form .comentario .comentar:focus {
   border-color: rgb(206, 155, 193);
   border-width: 1px 1px 3px 1px;
   box-shadow: none;
 }
-.main-contacto .comentario .comentar:focus-visible {
+.main-contacto .contacto-form .comentario .comentar:focus-visible {
   outline: none;
   border-radius: 3px;
 }
-.main-contacto .comentario button {
+.main-contacto .contacto-form .comentario button {
   color: rgb(206, 155, 193);
   background-color: rgb(71, 117, 71);
 }
-.main-contacto .comentario button:hover {
+.main-contacto .contacto-form .comentario button:hover {
   color: rgb(71, 117, 71);
   transition: 0.5s;
   background-color: rgb(206, 155, 193);
@@ -648,6 +648,48 @@ h2 {
   color: rgb(33, 82, 33);
   transition: 0.5s;
   background-color: rgb(237, 133, 227);
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto .user-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto .user-form p {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  color: rgb(124, 174, 124);
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto .user-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto .user-form form label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto .user-form form label input {
+  color: rgb(124, 174, 124);
+  font-weight: 200;
+  border-width: 1px 1px 3px 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-radius: 2px;
+  box-shadow: none;
+  background-color: #fff;
+  width: 10rem;
+  padding: 0.3rem;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto .user-form form label input:focus {
+  border-color: rgb(206, 155, 193);
+  border-width: 1px 1px 3px 1px;
+  box-shadow: none;
+}
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto .user-form form label input:focus-visible {
+  outline: none;
+  border-radius: 3px;
 }
 .producto-section .mostrador-producto .prod-detail .info-producto {
   display: flex;

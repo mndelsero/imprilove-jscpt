@@ -95,7 +95,7 @@
 
         img {
             border-radius: 2rem;
-            width: 150%;
+            width: 100%;
             border: $mainColor solid 1px;
         }
 
@@ -210,11 +210,12 @@
     }
 
     .contacto-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+       display: flex;
+       flex-wrap: wrap;
         gap: 2rem;
-        align-self: center;
+       
         align-items: center;
+        justify-content: center;
         padding: 2rem;
 
         label {
@@ -251,56 +252,56 @@
             }
 
         }
-
-
-    }
-
-    .comentario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-
-        .comentar {
-            color: $linkHoverColor;
-            padding: 0.2rem;
-            font-weight: 200;
-            border-width: 1px 1px 3px 1px;
-            border-style: solid;
-            border-color: #ddd;
-            border-radius: 2px;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            background-color: #fff;
-            margin-bottom: 2rem;
-
-            &:focus {
-                border-color: $mainColor;
+        .comentario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+    
+            .comentar {
+                color: $linkHoverColor;
+                padding: 0.2rem;
+                font-weight: 200;
                 border-width: 1px 1px 3px 1px;
+                border-style: solid;
+                border-color: #ddd;
+                border-radius: 2px;
                 -webkit-box-shadow: none;
                 box-shadow: none;
+                background-color: #fff;
+                margin-bottom: 2rem;
+    
+                &:focus {
+                    border-color: $mainColor;
+                    border-width: 1px 1px 3px 1px;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+    
+                &:focus-visible {
+                    outline: none;
+                    border-radius: 3px;
+                }
+    
+    
             }
-
-            &:focus-visible {
-                outline: none;
-                border-radius: 3px;
+    
+            button {
+                color: $mainColor;
+                background-color: rgb(71, 117, 71);
+    
+                &:hover {
+                    color: rgb(71, 117, 71);
+                    transition: 0.5s;
+                    background-color: $mainColor
+                }
             }
-
-
-        }
-
-        button {
-            color: $mainColor;
-            background-color: rgb(71, 117, 71);
-
-            &:hover {
-                color: rgb(71, 117, 71);
-                transition: 0.5s;
-                background-color: $mainColor
-            }
+    
         }
 
     }
+
+    
 
     button {
         font-size: 1.5rem;
@@ -614,6 +615,65 @@ align-self: flex-start;
                         }
     
     
+                    }
+
+                    .user-form{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1rem;
+
+
+                        p{font-size: 1.2rem;
+                            line-height: 1rem;
+                            color: $linkHoverColor;
+
+                        }
+
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 0.3rem;
+
+
+                            label{
+                                font-size: 1rem;
+                                font-weight: 400;
+                                color: #777777;
+                    
+                                input {
+                                    color: $linkHoverColor;
+                                    font-weight: 200;
+                                    border-width: 1px 1px 3px 1px;
+                                    border-style: solid;
+                                    border-color: #ddd;
+                                    border-radius: 2px;
+                                    -webkit-box-shadow: none;
+                                    box-shadow: none;
+                                    background-color: #fff;
+                                    width: 10rem;
+                                    padding: 0.3rem;
+                    
+                    
+                                    &:focus {
+                                        border-color: $mainColor;
+                                        border-width: 1px 1px 3px 1px;
+                                        -webkit-box-shadow: none;
+                                        box-shadow: none;
+                                    }
+                    
+                                    &:focus-visible {
+                                        outline: none;
+                                        border-radius: 3px;
+                                    }
+                    
+                                }
+                            }
+
+                            button{
+
+                            }
+                        }
                     }
     
                 }
