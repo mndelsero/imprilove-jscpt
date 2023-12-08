@@ -242,10 +242,12 @@ h2 {
   padding-inline: 25rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .main-section .section-presentacion img {
   border-radius: 2rem;
-  width: 100%;
+  width: 150%;
+  border: rgb(206, 155, 193) solid 1px;
 }
 .main-section .section-presentacion p {
   padding-top: 3rem;
@@ -431,11 +433,13 @@ h2 {
 .related-prods {
   display: flex;
   flex-direction: column;
+  align-self: center;
   align-items: center;
   justify-content: center;
 }
 .related-prods .related-prod-sctn {
   display: grid;
+  align-self: flex-start;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-inline: 2rem;
   width: 75%;
@@ -594,7 +598,7 @@ h2 {
   outline: none;
   border-radius: 3px;
 }
-.producto-section .mostrador-producto .prod-detail .prod-total-price {
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-total-price {
   color: rgb(124, 174, 124);
   display: flex;
   flex-direction: column;
@@ -602,34 +606,35 @@ h2 {
   padding: 0.2rem;
   width: 100%;
 }
-.producto-section .mostrador-producto .prod-detail .prod-total-price h4 {
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-total-price h4 {
   font-size: 1.8rem;
   color: rgb(124, 174, 124);
   font-weight: 900;
   margin: 0;
 }
-.producto-section .mostrador-producto .prod-detail .prod-total-price h4 span {
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-total-price h4 span {
   font-size: 0.8rem;
 }
-.producto-section .mostrador-producto .prod-detail .prod-total-price P {
+.producto-section .mostrador-producto .prod-detail .producto-intro .prod-total-price P {
   font-size: 1rem;
   margin: 0;
   letter-spacing: 2px;
   font-weight: 600;
   color: #777777;
 }
-.producto-section .mostrador-producto .prod-detail .contacto-producto {
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0.2rem;
   gap: 3px;
 }
-.producto-section .mostrador-producto .prod-detail .contacto-producto h4 {
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto h4 {
   font-family: "Comming", sans-serif;
   font-size: 3rem;
   margin: 0;
 }
-.producto-section .mostrador-producto .prod-detail .contacto-producto button {
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto button {
   border: 2px black;
   font-size: 1rem;
   align-self: center;
@@ -639,7 +644,7 @@ h2 {
   padding-inline: 1rem;
   border-radius: 5px;
 }
-.producto-section .mostrador-producto .prod-detail .contacto-producto button:hover {
+.producto-section .mostrador-producto .prod-detail .producto-intro .contacto-producto button:hover {
   color: rgb(33, 82, 33);
   transition: 0.5s;
   background-color: rgb(237, 133, 227);
