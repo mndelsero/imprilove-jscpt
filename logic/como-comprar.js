@@ -332,50 +332,50 @@ function crearFooter(){
     footerContent.setAttribute(`class`, `footer-content`);
     footerContent.innerHTML=
     `<div class="datos">
-    <section class="sobre-nosotros">
-        <h5>SOBRE NOSOTROS</h5>
-        <p>
-            Tienda de productos exclusivos <br> diseñados y elaborados con mucho <br> amor y dedicación. <br>
-            Contamos con
-            una linea de
-            productos <br> personalizados, para regalar y otros <br> especiales para emprendedores.</p>
-    </section>
-    <section class="contacto">
-        <h5>CONTACTO</h5>
-        <a href="mailto:imprilove@gmail.com">imprilove@gmail.com</a>
-        <a href="https://wa.me/56922043628" target="_blank">+56922043628</a>
-    </section>
-    <section class="menu-pie">
-        <h5>MENU</h5>
-        <a href="./contacto.html">CONTACTO</a>
-        <a href="./adhesivos.html">ADHESIVOS</a>
-        <a href="./agendas-papeleria.html">AGENDAS Y PAPELERIA</a>
-        <a href="./como-comprar.html">COMO COMPRAR</a>
-        <a href="./fotografias-cuadros.html">FOTOGRAFÍAS Y CUADROS</a>
-        <a href="./kit-cumpleanios.html">KIT PARA CUMPLEAÑOS</a>
-        <a href="./marketing.html"> MARKETING</a>
-        <a href="./regalos.html">REGALOS</a>
-        <a href="./tarjeteria.html">TARJETERÍA</a>
-        <a href="../index.html">INICIO</a>
-    </section>
-    <section class="siguenos">
-        <h5>SIGUENOS</h5>
-        <div class="siguenos-redes"><a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
-                <img src="../imgs/facebook-app-symbol.png" alt="">
-            </a>
-            <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
-                <img src="../imgs/whatsapp (1).png" alt="">
-            </a>
-            <a href="https://www.instagram.com/imprilove.cl/" target="_blank"><img src="../imgs/instagram (1).png" alt=""></a>
-        </div>
-  </div>
-  <section class="pie-final">
-    <p> © 2023 Tienda LadyLoy . <br>
-        Todos los derechos reservados. Powered by Jumpseller.</p>
-    <a href="../index.html" class="logo-link">
-        <img src="../imgs/logo.jpg" alt="">
-    </a>
-  </section>`
+  <section class="sobre-nosotros">
+      <h5>SOBRE NOSOTROS</h5>
+      <p>
+          Tienda de productos exclusivos <br> diseñados y elaborados con mucho <br> amor y dedicación. <br>
+          Contamos con
+          una linea de
+          productos <br> personalizados, para regalar y otros <br> especiales para emprendedores.</p>
+  </section>
+  <section class="contacto">
+      <h5>CONTACTO</h5>
+      <a href="mailto:imprilove@gmail.com">imprilove@gmail.com</a>
+      <a href="https://wa.me/56922043628" target="_blank">+56922043628</a>
+  </section>
+  <section class="menu-pie">
+      <h5>MENU</h5>
+      <a href="./contacto.html">CONTACTO</a>
+      <a href="./adhesivos.html">ADHESIVOS</a>
+      <a href="./agendas-papeleria.html">AGENDAS Y PAPELERÍA</a>
+      <a href="./como-comprar.html">COMO COMPRAR</a>
+      <a href="./fotografias-cuadros.html">FOTOGRAFÍAS Y CUADROS</a>
+      <a href="./kit-cumpleanios.html">KIT PARA CUMPLEAÑOS</a>
+      <a href="./marketing.html"> MARKETING</a>
+      <a href="./regalos.html">REGALOS</a>
+      <a href="./tarjeteria.html">TARJETERÍA</a>
+      <a href="../index.html">INICIO</a>
+  </section>
+  <section class="siguenos">
+      <h5>SÍGUENOS</h5>
+      <div class="siguenos-redes"><a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
+              <img src="../imgs/facebook-app-symbol.png" alt="">
+          </a>
+          <a href="https://wa.me/56922043628" target="_blank" class="wsp-link">
+              <img src="../imgs/whatsapp (1).png" alt="">
+          </a>
+          <a href="https://www.instagram.com/imprilove.cl/" target="_blank"><img src="../imgs/instagram (1).png" alt=""></a>
+      </div>
+</div>
+<section class="pie-final">
+  <p> © 2023 Tienda Imprilove . <br>
+      Todos los derechos reservados.</p>
+  <a href="../index.html" class="logo-link">
+      <img src="../imgs/logo.jpg" alt="">
+  </a>
+</section>`
   footer.appendChild(footerContent)
   
   }

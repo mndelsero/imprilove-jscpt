@@ -358,7 +358,7 @@ function crearFooter() {
   let footerContent = document.createElement('div')
   footerContent.setAttribute(`class`, `footer-content`);
   footerContent.innerHTML =
-    `<div class="datos">
+  `<div class="datos">
   <section class="sobre-nosotros">
       <h5>SOBRE NOSOTROS</h5>
       <p>
@@ -376,7 +376,7 @@ function crearFooter() {
       <h5>MENU</h5>
       <a href="./contacto.html">CONTACTO</a>
       <a href="./adhesivos.html">ADHESIVOS</a>
-      <a href="./agendas-papeleria.html">AGENDAS Y PAPELERIA</a>
+      <a href="./agendas-papeleria.html">AGENDAS Y PAPELERÍA</a>
       <a href="./como-comprar.html">COMO COMPRAR</a>
       <a href="./fotografias-cuadros.html">FOTOGRAFÍAS Y CUADROS</a>
       <a href="./kit-cumpleanios.html">KIT PARA CUMPLEAÑOS</a>
@@ -386,7 +386,7 @@ function crearFooter() {
       <a href="../index.html">INICIO</a>
   </section>
   <section class="siguenos">
-      <h5>SIGUENOS</h5>
+      <h5>SÍGUENOS</h5>
       <div class="siguenos-redes"><a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
               <img src="../imgs/facebook-app-symbol.png" alt="">
           </a>
@@ -397,8 +397,8 @@ function crearFooter() {
       </div>
 </div>
 <section class="pie-final">
-  <p> © 2023 Tienda LadyLoy . <br>
-      Todos los derechos reservados. Powered by Jumpseller.</p>
+  <p> © 2023 Tienda Imprilove . <br>
+      Todos los derechos reservados.</p>
   <a href="../index.html" class="logo-link">
       <img src="../imgs/logo.jpg" alt="">
   </a>

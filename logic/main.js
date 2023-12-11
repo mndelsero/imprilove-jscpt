@@ -74,8 +74,8 @@ function crearPagina(e) {
     <label for="">Tamaño</label>
     <select name="sizes" id="prod-size" aria-placeholder="posicion" required>
         <option value="normal" class="">Normal</option>
-        <option value="pequeño">pequeño</option>
-        <option value="grande">grande</option>
+        <option value="pequeño">Pequeño</option>
+        <option value="grande">Grande</option>
     </select>
    </div>
    <div class="prod-tamanio prod-form-in">
@@ -89,7 +89,7 @@ function crearPagina(e) {
   </div>
   <div class="contacto-producto">
     <h4>Contactanos</h4>
-    <button  id="pre-form">Haz tu pedido</button>
+    <button  id="pre-form">Haz tu Pedido</button>
                    </div>
  </form>
 
@@ -147,18 +147,18 @@ const userForm=document.createElement("div")
 userForm.setAttribute("class","user-form")
 const contactoProd=document.querySelector(".contacto-producto")
 userForm.innerHTML=`
-<p>Pediste ${productoName}, tamaño ${prodSize},  te saldra en total $${precioPedido} por ${prodCantidad} unidad(es)</p>
+<p>Pediste ${productoName}, tamaño ${prodSize},  te saldrá en total $${precioPedido} por ${prodCantidad} unidad(es)</p>
 <p>Solo necesitamos tus datos para enviar tu pedido!! Rellena el formulario por favor!</p>
 <form action="https://formsubmit.co/imprilove@gmail.com" method="POST" class="contacto-form">
 <input type="hidden" name="cantidad" id="prod-cantidad" placeholder="1" value="${prodCantidad}" required>
 <input type="hidden" name="sizes" id="prod-size"  value="${prodSize}" required>
 <label for="">Nombre : <br> <input type="text" name="nombre" placeholder="Ingresa Tu Nombre" required></label>
-<label for="">Telefono :<br><input type="tel" name="telefono" placeholder="Ingresa Tu Telefono" required></label>
+<label for="">Teléfono :<br><input type="tel" name="telefono" placeholder="Ingresa Tu Teléfono" required></label>
 <label for="">E-Mail :<br><input type="email" name="email" id="" placeholder="Ingresa Tu Mail" required></label> 
-<input class="comentar" name="pedido" id="" cols="160" rows="5" placeholder="Dejanos tu pedido o comentario" type="hidden"></input>
+<input class="comentar" name="pedido" id="" cols="160" rows="5" placeholder="Déjanos tu pedido o comentario" type="hidden"></input>
 <button type="submit">ENVIAR</button> 
 </form>`
-contactoProd.innerHTML=` <h4>Contactanos</h4>`
+contactoProd.innerHTML=` <h4>Contáctanos</h4>`
 contactoProd.appendChild(userForm)
 })
  })
@@ -310,7 +310,7 @@ fetch('./proddata.json')
               const opcionBusqueda = document.createElement("option")
               opcionBusqueda.setAttribute(`class`, `opcion-de-busqueda`)
               opcionBusqueda.id = `producto${producto.productId}`
-              opcionBusqueda.innerText = `${producto.name} -Categoria: ${producto.category} - Precio: ${producto.price} `
+              opcionBusqueda.innerText = `${producto.name} -Categoría: ${producto.category} - Precio: ${producto.price} `
               buscadorOpciones.appendChild(opcionBusqueda)
             })
 
@@ -320,7 +320,7 @@ fetch('./proddata.json')
 
           } else {
             const opcionBusqueda = document.createElement("option")
-            opcionBusqueda.innerText = `Ningun elemento del catalogo coincide con tu busqueda, intenta de nuevo!`
+            opcionBusqueda.innerText = `Ningún elemento del catalogo coincide con tu búsqueda, intenta de nuevo!`
             buscadorOpciones.appendChild(opcionBusqueda)
           }
         }
@@ -393,7 +393,7 @@ function crearFooter() {
     <h5>MENU</h5>
     <a href="./pages/contacto.html">CONTACTO</a>
     <a href="./pages/adhesivos.html">ADHESIVOS</a>
-    <a href="./pages/agendas-papeleria.html">AGENDAS Y PAPELERIA</a>
+    <a href="./pages/agendas-papeleria.html">AGENDAS Y PAPELERÍA</a>
     <a href="./pages/como-comprar.html">COMO COMPRAR</a>
     <a href="./pages/fotografias-cuadros.html">FOTOGRAFÍAS Y CUADROS</a>
     <a href="./pages/kit-cumpleanios.html">KIT PARA CUMPLEAÑOS</a>
@@ -403,7 +403,7 @@ function crearFooter() {
     <a href="./index.html">INICIO</a>
   </section>
   <section class="siguenos">
-    <h5>SIGUENOS</h5>
+    <h5>SÍGUENOS</h5>
     <div class="siguenos-redes">
       <a href="https://www.facebook.com/imprilove.cl/" target="_blank" class="face-link">
         <img src="./imgs/facebook-app-symbol.png" alt="">
@@ -417,8 +417,8 @@ function crearFooter() {
     </div>
 </div>
 <section class="pie-final">
-  <p> © 2023 Tienda LadyLoy . <br>
-    Todos los derechos reservados. Powered by Jumpseller.</p>
+  <p> © 2023 Tienda Imprilove . <br>
+    Todos los derechos reservados.</p>
   <a href="./index.html" class="logo-link">
     <img src="./imgs/logo.jpg" alt="">
   </a>
