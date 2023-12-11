@@ -1,0 +1,45 @@
+/*desktopmini--------------------------*/
+
+@mixin desktop-mini {
+    @media screen and (max-width:1490px) {
+        @content;
+    }
+}
+
+@mixin desktop-carrousel {
+    @media screen and (max-width:1220px) {
+        @content;
+    }
+}
+/*tablet --------------------------------*/
+
+@mixin tablet {
+    @media screen and (max-width:1100px){
+        @content;
+    }
+}
+
+
+/*tabletmini----------------------------*/
+
+@mixin tablet-mini {
+    @media screen and (max-width:760px){
+        @content;
+    }
+}
+
+/*mobile--------------------------------*/
+
+@mixin mobile {
+    @media screen and (max-width:600px){
+        @content;
+    }
+}
+
+/*mobile mini-----------------------------------*/
+
+@mixin mobile-mini{
+    @media screen and (max-width:400px){
+        @content;
+    }
+}

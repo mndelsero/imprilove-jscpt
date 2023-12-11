@@ -1,14 +1,23 @@
 .header {
     display: flex;
     flex-direction: column;
+    padding: 0;
 
     .compras-contacto {
 
         h5 {
-            color: rgba(121, 114, 114, 0.74);
+
+            color: $grisletras;
             background-color: rgba(208, 137, 155, 0.23);
             padding-block: 1rem;
             text-align: center;
+            margin: 0;
+
+
+            @include tablet-mini {
+                padding-block: 0.4rem;
+                font-size: 1rem;
+            }
         }
     }
 
@@ -18,12 +27,35 @@
         align-items: center;
         width: 100%;
 
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
         .redes {
             padding: 1rem;
+
+            @include tablet-mini {
+                padding: 0;
+            }
+
+            @include mobile {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding-bottom: 1rem;
+                order: 1;
+            }
+
+
 
             a {
                 margin: 10px;
 
+                @include tablet-mini {
+                    margin: 3px;
+                }
 
 
             }
@@ -32,6 +64,7 @@
 
             img {
                 width: 20px;
+
 
                 &:hover {
                     transition: 0.5s;
@@ -52,6 +85,11 @@
 
             img {
                 border-radius: 50%;
+
+                @include tablet-mini {
+                    width: 100%;
+                }
+
             }
         }
 
@@ -60,16 +98,29 @@
             flex-direction: column;
             align-items: center;
 
-
+            @include mobile {
+                width: 100%;
+                order: -1;
+                padding: 0;
+                align-items: start;
+                padding-top: 0.5rem;
+            }
 
 
             .barra-buscar {
                 display: flex;
+                width: 100%;
+                justify-content: center;
+
 
                 .buscar {
                     border-radius: 4px;
                     border: none;
                     padding: 0.2rem;
+
+                    @include mobile {
+                        margin-left: 1.5rem;
+                    }
 
                     &:hover {
                         transition: 0.5s;
@@ -87,7 +138,7 @@
 
                 input {
                     width: 100%;
-                    color: $linkHoverColor;
+                    color: $buttonHoverColor;
                     font-weight: 200;
                     border-width: 1px 1px 3px 1px;
                     border-style: solid;
@@ -117,8 +168,22 @@
                 position: absolute;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 z-index: 998;
-                top: 12rem;
+                top: 12.2rem;
+                width: 30%;
+
+                @include tablet-mini {
+                    top: 10rem;
+
+                }
+
+                @include mobile {
+                    width: 100%;
+                    background-color: white;
+                    top: 6rem;
+                    padding-left: 2rem;
+                }
 
                 h5 {
                     font-weight: 500;
@@ -140,17 +205,44 @@
                         }
                     }
 
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
                     border: solid 0.5px #a7a7a7;
                     border-radius: 2px;
                     position: relative;
                     background-color: #f1f1f1;
                     min-width: 160px;
+                    width: 100%;
                     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                     z-index: 1;
                     cursor: pointer;
 
+                    @include tablet {
+                        letter-spacing: 0.1px;
+                        word-spacing: 0.1px;
+
+                        padding-inline: 1rem;
+                        width: 25rem;
+                        align-self: end;
+
+                    }
+
+                    @include mobile {
+                        align-self: center;
+
+                    }
+                    @include mobile-mini{
+                       width: 16rem;
+                       padding: 0;
+                       font-size: 0.8rem;
+                        
+                    }
+
+
+
                     &:hover {
-                        color: $linkHoverColor;
+                        color: $buttonHoverColor;
                     }
                 }
             }
@@ -177,6 +269,14 @@
 
         li {
             padding: 1rem;
+
+            @include desktop-mini {
+                padding: 0.2rem;
+            }
+
+            @include tablet-mini {
+                padding: 0;
+            }
         }
 
 
@@ -187,10 +287,20 @@
             color: $menuColor ;
             border-radius: 5px;
 
+            @include desktop-mini {
+                line-break: 1px;
+            }
+
+            @include tablet-mini {
+                font-size: 1.2rem;
+                padding-block: 0.2rem;
+                padding-inline: 0.5rem;
+            }
+
             &:hover {
-                background-color: #e5e5e5;
+
                 transition: 0.5s;
-                color: #385d47;
+                color: $linkHoverColor;
             }
 
         }

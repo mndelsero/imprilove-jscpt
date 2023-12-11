@@ -15,12 +15,27 @@
 
         line-height: 1.5rem;
 
+        @include mobile{
+            display: flex;
+flex-direction: column;
+align-items: center;
+        }
+
+        @include tablet-mini{
+            padding: 2rem;
+        }
+        @include mobile{
+            padding: 1rem;
+        }
+
+
+
         a {
             color: black;
         }
 
         a:hover {
-            color: rgb(124, 174, 124);
+            color: $mainColor;
             transition: 0.5s;
         }
 
@@ -29,8 +44,13 @@
             flex-direction: column;
             margin-inline: 1rem;
 
+            @include mobile{
+                margin-inline: 0;
+                width: 100%;
+            }
+
             h5 {
-                border-bottom: darkgrey solid 0.5px;
+                border-bottom: $menuColor solid 0.5px;
                 padding: 1rem;
                 margin-bottom: 1rem;
             }
@@ -41,8 +61,14 @@
             flex-direction: column;
             margin-inline: 1rem;
 
+            @include mobile{
+                margin-inline: 0;
+                width: 100%;
+
+            }
+
             h5 {
-                border-bottom: darkgrey solid 0.5px;
+                border-bottom: $menuColor solid 0.5px;
                 padding: 1rem;
                 margin-bottom: 1rem;
             }
@@ -53,8 +79,14 @@
             flex-direction: column;
             margin-inline: 1rem;
 
+            @include mobile{
+                margin-inline: 0;
+                width: 100%;
+
+            }
+
             h5 {
-                border-bottom: darkgrey solid 0.5px;
+                border-bottom: $menuColor solid 0.5px;
                 padding: 1rem;
                 margin-bottom: 1rem;
             }
@@ -63,10 +95,13 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+
+               
+
                 img {
                     width: 20px;
     
-                    &:hover {background-color: $linkHoverColor;
+                    &:hover {background-color: $mainColor;
                         transition: 0.5s;
                         border-radius: 2px;
                         transform: scale(1.1);
@@ -86,6 +121,12 @@
             display: flex;
             flex-direction: column;
             margin-inline: 1rem;
+
+            @include mobile{
+                margin-inline: 0;
+                width: 100%;
+
+            }
 
             h5 {
                 border-bottom: darkgrey solid 0.5px;

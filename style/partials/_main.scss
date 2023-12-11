@@ -23,12 +23,45 @@
         width: 100%;
         padding-inline: 5rem;
 
+        @include mobile{
+            padding-inline: 2rem;
+           }
+
         .carousel-control-prev {
+
+
             z-index: 0;
+
+           @include desktop-carrousel{
+            justify-content: end;
+           }
+
+           @include tablet-mini{
+            left: 2rem;
+           }
+
+           @include mobile{
+            left: 1rem;
+            justify-content: center;
+
+           }
         }
 
         .carousel-control-next {
             z-index: 0;
+
+            @include desktop-carrousel{
+                justify-content: start;
+               }
+
+               @include tablet-mini{
+                right: 2rem;
+               }
+
+               @include mobile{
+                right: 1rem;
+                justify-content: center;
+               }
         }
 
         .carousel-inner {
@@ -36,6 +69,23 @@
                 img {
                     height: 40rem;
                     border-radius: 20px;
+
+                    @include tablet-mini{
+                        width: 120%;
+                        height: 30rem;
+
+                       }
+                       @include mobile{
+                        width: 100%;
+                        height: 25rem;
+                       }
+                       @include mobile-mini{
+                        width: 100%;
+                        height: 20rem;
+                       }
+                       
+
+
                 }
             }
         }
@@ -45,8 +95,18 @@
         display: flex;
         flex-direction: column;
 
+        @include mobile {
+            align-items: center;
+
+        }
+
         h2 {
             align-self: center;
+
+            @include mobile {
+                display: flex;
+                justify-content: center;
+            }
         }
 
         p {
@@ -61,15 +121,15 @@
         display: flex;
         flex-direction: column;
 
-        a {
+        section {
+            a {
 
 
 
+                &:hover {
 
-            &:hover {
-                color: $buttonHoverColor;
-                transition: 0.5s;
-                background-color: $mainColor;
+                    background-color: none;
+                }
             }
         }
     }
@@ -99,9 +159,7 @@
             border: $mainColor solid 1px;
         }
 
-        .instru-compra{
-
-        }
+        .instru-compra {}
 
         p {
             padding-top: 3rem;
@@ -131,7 +189,7 @@
 
                 font-size: 1.5rem;
                 font-weight: 400;
-                color: #777777;
+                color: $grisletras;
 
             }
 
@@ -140,7 +198,7 @@
                 font-weight: 200;
                 border-width: 1px 1px 3px 1px;
                 border-style: solid;
-                border-color: #ddd;
+                border-color: $menuColor;
                 border-radius: 2px;
                 -webkit-box-shadow: none;
                 box-shadow: none;
@@ -200,9 +258,20 @@
                 font-weight: 500;
             }
 
+            a {
+                span {
+                    &:hover {
+                        color: $buttonHoverColor;
+                    }
+                }
+            }
+
             span {
                 color: $mainColor;
+
             }
+
+
 
         }
 
@@ -210,10 +279,10 @@
     }
 
     .contacto-form {
-       display: flex;
-       flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
-       
+
         align-items: center;
         justify-content: center;
         padding: 2rem;
@@ -221,14 +290,14 @@
         label {
             font-size: 1.5rem;
             font-weight: 400;
-            color: #777777;
+            color: $grisletras;
 
             input {
-                color: $linkHoverColor;
+                color: $buttonHoverColor;
                 font-weight: 200;
                 border-width: 1px 1px 3px 1px;
                 border-style: solid;
-                border-color: #ddd;
+                border-color: $menuColor;
                 border-radius: 2px;
                 -webkit-box-shadow: none;
                 box-shadow: none;
@@ -244,6 +313,7 @@
                     box-shadow: none;
                 }
 
+
                 &:focus-visible {
                     outline: none;
                     border-radius: 3px;
@@ -252,72 +322,59 @@
             }
 
         }
+
         .comentario {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-    
+
             .comentar {
-                color: $linkHoverColor;
+                color: $buttonHoverColor;
                 padding: 0.2rem;
                 font-weight: 200;
                 border-width: 1px 1px 3px 1px;
                 border-style: solid;
-                border-color: #ddd;
+                border-color: $menuColor;
                 border-radius: 2px;
                 -webkit-box-shadow: none;
                 box-shadow: none;
                 background-color: #fff;
                 margin-bottom: 2rem;
-    
+
                 &:focus {
                     border-color: $mainColor;
                     border-width: 1px 1px 3px 1px;
                     -webkit-box-shadow: none;
                     box-shadow: none;
                 }
-    
+
                 &:focus-visible {
                     outline: none;
                     border-radius: 3px;
                 }
-    
-    
+
+
             }
-    
+
             button {
                 color: $mainColor;
-                background-color: rgb(71, 117, 71);
-    
+                background-color: $linkHoverColor;
+
                 &:hover {
-                    color: rgb(71, 117, 71);
+                    color: $linkHoverColor;
                     transition: 0.5s;
                     background-color: $mainColor
                 }
             }
-    
+
         }
 
     }
 
-    
 
-    button {
-        font-size: 1.5rem;
-        align-self: center;
-        color: white;
-        background-color: #68c4a1;
-        padding-block: 0.5rem;
-        padding-inline: 2rem;
-        border-radius: 5px;
 
-        &:hover {
-            color: rgb(124, 174, 124);
-            transition: 0.5s;
-            background-color: brown;
-        }
-    }
+
 }
 
 .btn-volver {
@@ -326,14 +383,14 @@
 
     font-size: 1.5rem;
     align-self: center;
-    color: white;
-    background-color: #68c4a1;
+    color: $mainColor;
+    background-color: $linkHoverColor;
     padding-block: 0.5rem;
     padding-inline: 2rem;
     border-radius: 5px;
 
     &:hover {
-        color: $buttonHoverColor;
+        color: $linkHoverColor;
         transition: 0.5s;
         background-color: $mainColor;
         border: solid $buttonHoverColor 2px;
@@ -350,7 +407,7 @@
 
     .related-prod-sctn {
         display: grid;
-align-self: flex-start;
+        align-self: flex-start;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding-inline: 2rem;
         width: 75%;
@@ -390,12 +447,14 @@ align-self: flex-start;
                 align-items: center;
 
                 h3 {
+                    font-size: 1.5rem;
                     font-weight: 600;
                     color: $mainColor;
                 }
 
                 h5 {
-                    color: $linkHoverColor;
+                    font-size: 1.5rem;
+
                 }
 
                 p {}
@@ -411,14 +470,14 @@ align-self: flex-start;
     flex-direction: column;
     padding: 0rem;
     margin: 2rem;
-    border: solid violet 1px;
+    border: solid $mainColor 1px;
     border-radius: 2rem;
     width: 90vw;
     align-self: center;
 
 
     .producto-tit {
-        background-color: #e7e7e7;
+        background-color: $fondogris;
         padding-block: 0.5rem;
         padding-inline: 2rem;
         margin: 0rem;
@@ -432,7 +491,7 @@ align-self: flex-start;
         justify-content: start;
         align-items: center;
         gap: 1rem;
-        color: #999999;
+        color: $grisletras;
         font-weight: 900;
         padding-inline: 3rem;
         padding-block: 0.5rem;
@@ -441,13 +500,13 @@ align-self: flex-start;
         a {
             font-size: 1rem;
             padding: 0rem;
-            color: $menuColor ;
+            color: $grisletras ;
             border-radius: 5px;
 
             &:hover {
 
                 transition: 0.5s;
-                color: #385d47;
+                color: $buttonHoverColor;
             }
 
         }
@@ -465,7 +524,7 @@ align-self: flex-start;
             padding: 0.2rem;
             width: 30rem;
 
-            border: solid #999999 1px;
+            border: solid $menuColor 1px;
         }
 
         .prod-detail {
@@ -480,9 +539,9 @@ align-self: flex-start;
 
                 .intro-nombre {
                     width: 100%;
-                    color: rgb(237, 133, 227);
+                    color: $mainColor;
                     margin: 0;
-                    border-bottom: solid rgb(237, 133, 227) 2px;
+                    border-bottom: solid $mainColor 2px;
                     font-size: 2rem;
                 }
 
@@ -508,7 +567,7 @@ align-self: flex-start;
                             font-size: 1.5rem;
                             width: 100%;
                             border-radius: 5px;
-                            color: $linkHoverColor;
+                            color: $buttonHoverColor;
                             border-width: 1px 1px 3px 1px;
                             -webkit-box-shadow: none;
                             box-shadow: none;
@@ -535,7 +594,7 @@ align-self: flex-start;
                             border-radius: 5px;
                             border-style: solid;
                             width: 100%;
-                            color: $linkHoverColor;
+                            color: $buttonHoverColor;
                             border-width: 1px 1px 3px 1px;
                             -webkit-box-shadow: none;
                             box-shadow: none;
@@ -558,30 +617,30 @@ align-self: flex-start;
                 }
 
                 .prod-total-price {
-                    color: $linkHoverColor;
+                    color: $buttonHoverColor;
                     display: flex;
                     flex-direction: column;
                     align-items: end;
                     padding: 0.2rem;
                     width: 100%;
-    
+
                     h4 {
                         font-size: 1.8rem;
-                        color: $linkHoverColor;
+                        color: $buttonHoverColor;
                         font-weight: 900;
                         margin: 0;
-    
+
                         span {
                             font-size: 0.8rem;
                         }
                     }
-    
+
                     P {
                         font-size: 1rem;
                         margin: 0;
                         letter-spacing: 2px;
                         font-weight: 600;
-                        color: #777777;
+                        color: $grisletras;
                     }
                 }
 
@@ -591,98 +650,97 @@ align-self: flex-start;
                     align-items: center;
                     padding: 0.2rem;
                     gap: 3px;
-    
+
                     h4 {
                         font-family: 'Comming', sans-serif;
                         font-size: 3rem;
                         margin: 0;
                     }
-    
+
                     button {
                         border: 2px black;
                         font-size: 1rem;
                         align-self: center;
-                        color: white;
-                        background-color: #68c4a1;
+                        color: $mainColor;
+                        background-color: $linkHoverColor;
                         padding-block: 0.3rem;
                         padding-inline: 1rem;
                         border-radius: 5px;
-    
+
                         &:hover {
-                            color: rgb(33, 82, 33);
+                            color: $linkHoverColor;
                             transition: 0.5s;
-                            background-color: rgb(237, 133, 227);
+                            background-color: $mainColor;
                         }
-    
-    
+
+
                     }
 
-                    .user-form{
+                    .user-form {
                         display: flex;
                         flex-direction: column;
                         padding: 1rem;
 
 
-                        p{font-size: 1.2rem;
+                        p {
+                            font-size: 1.2rem;
                             line-height: 1rem;
-                            color: $linkHoverColor;
+                            color: $mainColor;
 
                         }
 
-                        form{
+                        form {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             gap: 0.3rem;
 
 
-                            label{
+                            label {
                                 font-size: 1rem;
                                 font-weight: 400;
-                                color: #777777;
-                    
+                                color: $grisletras;
+
                                 input {
-                                    color: $linkHoverColor;
+                                    color: $buttonHoverColor;
                                     font-weight: 200;
                                     border-width: 1px 1px 3px 1px;
                                     border-style: solid;
-                                    border-color: #ddd;
+                                    border-color: $menuColor;
                                     border-radius: 2px;
                                     -webkit-box-shadow: none;
                                     box-shadow: none;
                                     background-color: #fff;
                                     width: 10rem;
                                     padding: 0.3rem;
-                    
-                    
+
+
                                     &:focus {
                                         border-color: $mainColor;
                                         border-width: 1px 1px 3px 1px;
                                         -webkit-box-shadow: none;
                                         box-shadow: none;
                                     }
-                    
+
                                     &:focus-visible {
                                         outline: none;
                                         border-radius: 3px;
                                     }
-                    
+
                                 }
                             }
 
-                            button{
-
-                            }
+                            button {}
                         }
                     }
-    
+
                 }
-    
+
             }
 
-         
 
-    
+
+
 
 
             .info-producto {
@@ -692,11 +750,12 @@ align-self: flex-start;
                 h5 {
                     font-weight: 700;
                     font-size: 2rem;
-                    color: rgb(237, 133, 227);
+                    color: $mainColor;
                     margin: 0;
                 }
 
                 h4 {
+                    color: $mainColor;
                     margin: 0;
                 }
 

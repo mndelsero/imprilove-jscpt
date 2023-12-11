@@ -31,6 +31,22 @@ h2{color: $mainColor;
     padding-top: 1.5rem;
     font-size: 4rem;
     font-family: 'Comming', sans-serif;
+
+    @include tablet{
+        font-size: 3rem;
+
+    }
+
+    @include tablet-mini{
+       padding-top: 0.8rem;
+       font-size: 2.5rem;
+
+    }
+
+    @include mobile{
+
+        font-size: 1.8rem;
+    }
 }
 
 

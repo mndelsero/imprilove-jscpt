@@ -5,19 +5,46 @@
     padding-inline: 5rem;
     gap: 1rem;
 
+    @include desktop-mini{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    @include tablet-mini{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    @include mobile{
+       padding-inline: 1rem;
+
+    }
+
     a {
         color: black;
 
     }
 
     a:hover {
-        color: rgb(124, 174, 124);
+        color: $buttonHoverColor;
         transition: 0.5s;
-        background-color: $mainColor;
+
     }
 
     h2 {
         align-self: center;
+
+        @include mobile{
+            display: flex;
+            justify-content: center;
+
+        }
     }
 
 
@@ -31,6 +58,11 @@
         width: 20rem;
         cursor: pointer;
 
+        @include mobile{
+            width: 15rem;
+
+        }
+
 
         &:hover {
             transition: 0.5s;
@@ -44,38 +76,31 @@
             width: 18rem;
             height: 18rem;
             border-radius: 5px;
+
+            @include mobile{
+                width: 100%;
+    
+            }
         }
 
         .card-body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-size: 1.5rem;
             padding: 1rem;
             line-height: 1.5rem;
 
-            a:hover {
-                border-radius: 5px;
-                background-color: #e5e5e5;
-                transition: 0.5s;
-                color: $buttonHoverColor;
-            }
-
-            .btn-comprar {
-                color: white;
-                background-color: #68c4a1;
-                padding: 0.5rem;
-                border-radius: 5px;
-                border: none;
-
-                &:hover {
+            h5 {
+                a:hover {
+                    border-radius: 5px;
+                    background-color: none;
                     transition: 0.5s;
                     color: $buttonHoverColor;
-                    border: solid $buttonHoverColor 2px;
-
-                    background-color: $mainColor;
-                    font-weight: bold;
                 }
+
             }
+
 
         }
 
@@ -88,15 +113,18 @@
 
 
 .ver-seccion {
-    color: white;
-    background-color: #68c4a1;
+    background-color: $linkHoverColor;
+    color: $mainColor;
     padding: 0.5rem;
     border-radius: 5px;
     align-self: center;
 
     &:hover {
+        transition: 0.5s;
+
+        color: $linkHoverColor;
         background-color: $mainColor;
-        color: $buttonHoverColor;
+
     }
 
 
@@ -108,8 +136,23 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: (6, 1fr);
+gap: 0.5rem;
 
-    gap: 0.5rem;
+    @include desktop-mini{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    @include tablet-mini{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
 
 
     a {
@@ -118,9 +161,9 @@
     }
 
     a:hover {
-        color: $linkHoverColor;
+        color: $buttonHoverColor;
         transition: 0.5s;
-        background-color: $mainColor;
+       
     }
 
     h2 {
@@ -132,10 +175,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1.5rem;
         padding: 1rem;
         margin-block: 1rem;
         width: 20rem;
         border: 0px;
+
+        @include mobile{
+            width: 15rem;
+
+        }
 
         &:hover {
             transition: 0.5s;
@@ -150,6 +199,11 @@
             height: 18rem;
             border-radius: 5px;
 
+            @include mobile{
+                width: 100%;
+    
+            }
+
         }
 
         .card-body {
@@ -161,27 +215,12 @@
 
             a:hover {
                 border-radius: 5px;
-                background-color: #e5e5e5;
+                background-color: none;
                 transition: 0.5s;
-                color: #385d47;
+                color: $buttonHoverColor;
             }
 
-            .btn-comprar {
-                color: white;
-                background-color: #68c4a1;
-                padding: 0.5rem;
-                border-radius: 5px;
-                border: none;
-
-                &:hover {
-
-                    transition: 0.5s;
-                    color: $buttonHoverColor;
-                    border: solid $buttonHoverColor 2px;
-                    background-color: $mainColor;
-                    font-weight: bold;
-                }
-            }
+          
 
         }
 
